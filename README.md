@@ -1,4 +1,4 @@
-[Link Diagrama de Clases](https://lucid.app/lucidchart/f0e4fb76-1a8e-4995-be2d-61d92bf68501/edit?viewport_loc=-184%2C-1353%2C3251%2C1538%2C0_0&invitationId=inv_ba4a12ba-e3d8-4172-9df8-5c23d8b7959d)
+
 
 
 # Libreta-sanitaria-Programacion
@@ -59,4 +59,8 @@ Incluye nombre del veterinario, fechas, dosis y observaciones relevantes.
 2. **Reporte de vacunaciones próximas**
 Permite visualizar un listado de vacunas que están por vencer o próximas a aplicarse, con fechas y tipo de vacuna.
 Este reporte puede ser generado automáticamente o consultado manualmente por el usuario.
+
+**Diagrama de Clases**
+
+[Link Diagrama de Clases](https://lucid.app/lucidchart/f0e4fb76-1a8e-4995-be2d-61d92bf68501/edit?viewport_loc=-184%2C-1353%2C3251%2C1538%2C0_0&invitationId=inv_ba4a12ba-e3d8-4172-9df8-5c23d8b7959d)
 
