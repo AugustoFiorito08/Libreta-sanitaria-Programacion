@@ -51,10 +51,10 @@ Permita gestionar de forma digital la información sanitaria de las mascotas, op
 **Reportes previstos**
 
 1. **Reporte de historial médico por mascota**
-Genera un documento en formato PDF con todas las vacunas, tratamientos y observaciones médicas registradas para una mascota específica.
+Genera una lista con todas las vacunas, tratamientos y observaciones médicas registradas para una mascota específica.
 Incluye nombre del veterinario, fechas, dosis y observaciones relevantes.
 
 2. **Reporte de vacunaciones próximas**
-Permite visualizar o descargar un listado de vacunas que están por vencer o próximas a aplicarse, con fechas y tipo de vacuna.
+Permite visualizar un listado de vacunas que están por vencer o próximas a aplicarse, con fechas y tipo de vacuna.
 Este reporte puede ser generado automáticamente o consultado manualmente por el usuario.
 
