@@ -1,14 +1,12 @@
 
 
 
+
 # Libreta-sanitaria-Programacion
 
  **Resumen del Contexto del Proyecto**
 
-El proyecto **“Libreta Sanitaria Digital”** surge ante la necesidad de modernizar el control sanitario de las mascotas.
-Actualmente, la mayoría de los dueños anotan las vacunas, tratamientos o turnos en libretas físicas o directamente no llevan un registro adecuado, lo que genera pérdida de información y desorganización en la atención veterinaria.
-
-La aplicación propuesta busca **digitalizar este proceso**, brindando a los dueños de mascotas y veterinarios una herramienta práctica, que permita registrar, consultar y mantener actualizada la información sanitaria de los animales.
+La proyecto propuesto busca hacer un programa para dueños de mascotas y veterinarios, que permita registrar, consultar y mantener actualizada la información sanitaria de los animales.
 
  **Descripción breve del sistema**
 
@@ -27,14 +25,16 @@ Permitirá el registro de dos tipos de usuarios: **dueños de mascotas** y **vet
 
 **Objetivo general:**
 
-Permita gestionar de forma digital la información sanitaria de las mascotas, optimizando el seguimiento médico y la comunicación entre dueños y veterinarios.
+Permita gestionar la información sanitaria de las mascotas, el seguimiento médico y la comunicación entre dueños y veterinarios.
 
 **Objetivos específicos:**
 
-1. Permitir el **registro y acceso seguro** de usuarios según su rol (Dueño o Veterinario).
-2. Facilitar la **gestión completa de las mascotas**, incluyendo vacunaciones, tratamientos y turnos.
-3. Ofrecer **recordatorios automáticos y notificaciones** sobre vacunas y citas próximas.
-
+1. Permitir el **registro y acceso seguro** de usuarios según su rol (Dueño o Veterinario) (ABM Usuario).
+2. Permitir el **registro de una mascota** (AMB Mascotas)
+3. Facilitar la **gestión completa de las mascotas**, incluyendo vacunaciones, tratamientos y turnos.
+4. Ofrecer **recordatorios automáticos y notificaciones** sobre vacunas y citas próximas.
+5. Generar **reportes y certificados en PDF**, asegurando la disponibilidad y respaldo de la información.
+6. Garantizar la **funcionalidad offline**, sincronizando los datos cuando se recupere la conexión.
 
 
  **Funcionalidades con Alta, Baja y Modificación**
