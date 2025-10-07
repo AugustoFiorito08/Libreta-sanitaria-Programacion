@@ -34,7 +34,6 @@ Permita gestionar de forma digital la información sanitaria de las mascotas, op
 4. Generar **reportes y certificados en PDF**, asegurando la disponibilidad y respaldo de la información.
 5. Garantizar la **funcionalidad offline**, sincronizando los datos cuando se recupere la conexión.
 
----
 
  **Funcionalidades con Alta, Baja y Modificación**
 
