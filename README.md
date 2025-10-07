@@ -34,8 +34,7 @@ Permita gestionar de forma digital la información sanitaria de las mascotas, op
 1. Permitir el **registro y acceso seguro** de usuarios según su rol (Dueño o Veterinario).
 2. Facilitar la **gestión completa de las mascotas**, incluyendo vacunaciones, tratamientos y turnos.
 3. Ofrecer **recordatorios automáticos y notificaciones** sobre vacunas y citas próximas.
-4. Generar **reportes y certificados en PDF**, asegurando la disponibilidad y respaldo de la información.
-5. Garantizar la **funcionalidad offline**, sincronizando los datos cuando se recupere la conexión.
+
 
 
  **Funcionalidades con Alta, Baja y Modificación**
