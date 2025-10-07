@@ -16,8 +16,6 @@ Permitirá el registro de dos tipos de usuarios: **dueños de mascotas** y **vet
 
 * **Mascota:** nombre, especie, raza, edad, sexo, peso, código QR.
 * **Vacunación:** nombre, dosis, tipo, fecha, lugar.
-* **Tratamiento:** medicamento, cantidad, tipo, observaciones.
-* **Turno:** fecha, hora, motivo, veterinario asignado.
 * **Usuario (Dueño/Veterinario):** datos personales, credenciales de acceso.
 * **Historial médico:** conjunto de vacunas, tratamientos y observaciones asociadas a cada mascota.
 
