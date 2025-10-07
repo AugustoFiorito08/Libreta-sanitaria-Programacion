@@ -1,3 +1,6 @@
+[Link Diagrama de Clases](https://lucid.app/lucidchart/f0e4fb76-1a8e-4995-be2d-61d92bf68501/edit?viewport_loc=-184%2C-1353%2C3251%2C1538%2C0_0&invitationId=inv_ba4a12ba-e3d8-4172-9df8-5c23d8b7959d)
+
+
 # Libreta-sanitaria-Programacion
 
  **Resumen del Contexto del Proyecto**
