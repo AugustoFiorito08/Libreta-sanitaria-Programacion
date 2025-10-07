@@ -5,7 +5,7 @@
 El proyecto **“Libreta Sanitaria Digital”** surge ante la necesidad de modernizar el control sanitario de las mascotas.
 Actualmente, la mayoría de los dueños anotan las vacunas, tratamientos o turnos en libretas físicas o directamente no llevan un registro adecuado, lo que genera pérdida de información y desorganización en la atención veterinaria.
 
-La aplicación propuesta busca **digitalizar este proceso**, brindando a los dueños de mascotas y veterinarios una herramienta práctica, segura y accesible desde dispositivos móviles, que permita registrar, consultar y mantener actualizada la información sanitaria de los animales.
+La aplicación propuesta busca **digitalizar este proceso**, brindando a los dueños de mascotas y veterinarios una herramienta práctica, que permita registrar, consultar y mantener actualizada la información sanitaria de los animales.
 
  **Descripción breve del sistema**
 
@@ -26,7 +26,7 @@ Permitirá el registro de dos tipos de usuarios: **dueños de mascotas** y **vet
 
 **Objetivo general:**
 
-Desarrollar una aplicación móvil que permita gestionar de forma digital la información sanitaria de las mascotas, optimizando el seguimiento médico y la comunicación entre dueños y veterinarios.
+Permita gestionar de forma digital la información sanitaria de las mascotas, optimizando el seguimiento médico y la comunicación entre dueños y veterinarios.
 
 **Objetivos específicos:**
 
