@@ -59,6 +59,10 @@ Incluye nombre del veterinario, fechas, dosis y observaciones relevantes.
 Permite visualizar un listado de vacunas que están por vencer o próximas a aplicarse, con fechas y tipo de vacuna.
 Este reporte puede ser generado automáticamente o consultado manualmente por el usuario.
 
+**Explicacion de Cada Capa**
+
+Para guardar un registro en la base de datos, primero vamos a tener una clase ApplicationDbContext para crear la coneccion con esta con EntityFramework, luego una carpeta Repositorys donde se van a crear todos los repositorios necesarios para cada clase, conectandose con la carpeta de Models donde van a estar cada una de las clases. Como ultima capa vamos a tener los WindowsForm, o Front donde los usuarios van a poder interactuar, ingresando los datos necesarios para la creacion, modificacion o eliminacion de un registro. Tambien como poder ver listas o registros. 
+
 **Diagrama de Clases**
 
 [Link Diagrama de Clases](https://lucid.app/lucidchart/f0e4fb76-1a8e-4995-be2d-61d92bf68501/edit?viewport_loc=-184%2C-1353%2C3251%2C1538%2C0_0&invitationId=inv_ba4a12ba-e3d8-4172-9df8-5c23d8b7959d)
