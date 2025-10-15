@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Grupo N°7 - Libreta Sanitaria/1.0.0": {
+        "runtime": {
+          "Grupo N°7 - Libreta Sanitaria.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Grupo N°7 - Libreta Sanitaria/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

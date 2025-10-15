@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36518.9 d17.14
+VisualStudioVersion = 17.14.36518.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grupo N°7 - Libreta Sanitaria", "Grupo N°7 - Libreta Sanitaria\Grupo N°7 - Libreta Sanitaria.csproj", "{E92445F6-AAFD-48AA-84F7-B1EC3A4D6620}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biblioeta de Clases", "Biblioeta de Clases\Biblioeta de Clases.csproj", "{C73DEC97-9BF0-4064-A30A-49FF235EB491}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biblioteca de Clases", "Biblioeta de Clases\Biblioteca de Clases.csproj", "{C73DEC97-9BF0-4064-A30A-49FF235EB491}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

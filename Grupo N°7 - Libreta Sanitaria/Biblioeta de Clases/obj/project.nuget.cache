@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oa96H2oA3i0=",
+  "dgSpecHash": "iJrw8yeaS+U=",
   "success": true,
-  "projectFilePath": "C:\\Users\\franc\\Desktop\\ICES\\Ingeneria de SW - VSCode\\Grupo N°7 - Libreta Sanitaria\\Biblioeta de Clases\\Biblioeta de Clases.csproj",
+  "projectFilePath": "C:\\Users\\franc\\Desktop\\ICES\\Programacion 1\\Libreta-sanitaria-Programacion\\Grupo N°7 - Libreta Sanitaria\\Biblioeta de Clases\\Biblioteca de Clases.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\franc\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\franc\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

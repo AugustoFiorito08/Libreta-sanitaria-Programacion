@@ -4697,11 +4697,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\franc\\Desktop\\ICES\\Ingeneria de SW - VSCode\\Grupo N°7 - Libreta Sanitaria\\Biblioeta de Clases\\Biblioeta de Clases.csproj",
-      "projectName": "Biblioeta de Clases",
-      "projectPath": "C:\\Users\\franc\\Desktop\\ICES\\Ingeneria de SW - VSCode\\Grupo N°7 - Libreta Sanitaria\\Biblioeta de Clases\\Biblioeta de Clases.csproj",
+      "projectUniqueName": "C:\\Users\\franc\\Desktop\\ICES\\Programacion 1\\Libreta-sanitaria-Programacion\\Grupo N°7 - Libreta Sanitaria\\Biblioeta de Clases\\Biblioteca de Clases.csproj",
+      "projectName": "Biblioteca de Clases",
+      "projectPath": "C:\\Users\\franc\\Desktop\\ICES\\Programacion 1\\Libreta-sanitaria-Programacion\\Grupo N°7 - Libreta Sanitaria\\Biblioeta de Clases\\Biblioteca de Clases.csproj",
       "packagesPath": "C:\\Users\\franc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\franc\\Desktop\\ICES\\Ingeneria de SW - VSCode\\Grupo N°7 - Libreta Sanitaria\\Biblioeta de Clases\\obj\\",
+      "outputPath": "C:\\Users\\franc\\Desktop\\ICES\\Programacion 1\\Libreta-sanitaria-Programacion\\Grupo N°7 - Libreta Sanitaria\\Biblioeta de Clases\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
