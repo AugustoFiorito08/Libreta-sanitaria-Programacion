@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Biblioeta_de_Clases.Models;
+using Biblioeta_de_Clases;
+using Biblioeta_de_Clases.Repository;
 
 namespace Grupo_N_7___Libreta_Sanitaria
 {
@@ -53,8 +56,20 @@ namespace Grupo_N_7___Libreta_Sanitaria
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Mascota.nombre = textBox1.Text;
-            // Mascota.peso = int.Parse(textBox2.Text);
+            if (textBox3.Text == "")
+            {
+                MessageBox.Show("Debe ingresar un ID de mascota válido.");
+                return;
+            }
+            List<Mascota> mascotas = MascotaRepository.verMascotas();
+            if (mascotas == null || !mascotas.Any(m => m.ID_Mascota == int.Parse(textBox3.Text)))
+            {
+                MessageBox.Show("No se encontró una mascota con el ID proporcionado.");
+                return;
+            }
+
+            MessageBox.Show("Modificación realizada con éxito");
+            Mascota.modificarDatosMascota(mascotas.First(m => m.ID_Mascota == int.Parse(textBox3.Text)), textBox1.Text, int.Parse(textBox2.Text));
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e) // ID Mascota

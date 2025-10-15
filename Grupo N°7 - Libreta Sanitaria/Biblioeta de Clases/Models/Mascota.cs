@@ -8,17 +8,29 @@ namespace Biblioeta_de_Clases.Models
 {
     public class Mascota
     {
-        public int DniDuenio { get; set; }
-        public string NombreDuenio { get; set; }
         public int ID_Mascota { get; set; }
         public string Nombre { get; set; }
         public string Especie { get; set; }
         public string Raza { get; set; }
-        public int Edad { get; set; }
         public string Sexo { get; set; }
-        public float Peso { get; set; }
+        public int Peso { get; set; }        
+        public string NombreDuenio { get; set; }
 
-        // Relación: una mascota puede tener varios historiales médicos
-        public List<HistorialMedico> Historiales { get; set; } = new List<HistorialMedico>();
+        public List<HistorialMedico> Historial { get; set; } 
+        public Mascota( string nombre, string especie, string raza, int peso, string sexo, string nombreDuenio )
+        {           
+            Nombre = nombre;
+            Especie = especie;
+            Raza = raza;
+            Sexo = sexo;
+            Peso = peso;
+            NombreDuenio = nombreDuenio;
+            Historial = new List<HistorialMedico>();
+        }
+        public static void modificarDatosMascota(Mascota mascota, string nombre, int peso)
+        {
+            mascota.Nombre = nombre;
+            mascota.Peso = peso;
+        }
     }
 }

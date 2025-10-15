@@ -10,47 +10,23 @@ namespace Biblioeta_de_Clases.Repository
 {
     public class VacunaRepository
     {
-        private readonly ApplicationDbContext _context = new ApplicationDbContext();
-
-        // Crear (Agregar)
-        public void Agregar(Vacuna vacuna)
+        public static void GuardarVacuna(Vacuna vacuna)
         {
-            _context.Vacunas.Add(vacuna);
-            _context.SaveChanges();
+            using var context = new ApplicationDbContext();
+            context.Vacunas.Add(vacuna);
+            context.SaveChanges();
+        }
+        public static List<Vacuna> verVacunas()
+        {
+            using var context = new ApplicationDbContext();
+            return context.Vacunas.ToList();
+        }
+        public static void guardarCambios()
+        {
+            using var context = new ApplicationDbContext();
+            context.SaveChanges();
         }
 
-        // Obtener todas las vacunas
-        public List<Vacuna> ObtenerTodas()
-        {
-            return _context.Vacunas
-                .Include(v => v.Mascota)
-                .ToList();
-        }
-
-        // Buscar por ID
-        public Vacuna ObtenerPorId(int id)
-        {
-            return _context.Vacunas
-                .Include(v => v.Mascota)
-                .FirstOrDefault(v => v.ID_Vacuna == id);
-        }
-
-        // Actualizar
-        public void Actualizar(Vacuna vacuna)
-        {
-            _context.Vacunas.Update(vacuna);
-            _context.SaveChanges();
-        }
-
-        // Eliminar
-        public void Eliminar(int id)
-        {
-            var vacuna = _context.Vacunas.Find(id);
-            if (vacuna != null)
-            {
-                _context.Vacunas.Remove(vacuna);
-                _context.SaveChanges();
-            }
-        }
+        
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Grupo_N_7___Libreta_Sanitaria
 {
-    partial class Form1
+    partial class Form1 : Form
     {
         /// <summary>
         ///  Required designer variable.
@@ -41,6 +41,8 @@
             checkBox1 = new CheckBox();
             checkBox2 = new CheckBox();
             label6 = new Label();
+            textBox5 = new TextBox();
+            label7 = new Label();
             SuspendLayout();
             // 
             // button1
@@ -167,11 +169,30 @@
             label6.TabIndex = 14;
             label6.Text = "Alta de Mascota";
             // 
+            // textBox5
+            // 
+            textBox5.Location = new Point(469, 129);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(177, 27);
+            textBox5.TabIndex = 15;
+            textBox5.TextChanged += textBox5_TextChanged;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(469, 88);
+            label7.Name = "label7";
+            label7.Size = new Size(139, 20);
+            label7.TabIndex = 16;
+            label7.Text = "Nombre del dueño ";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label7);
+            Controls.Add(textBox5);
             Controls.Add(label6);
             Controls.Add(checkBox2);
             Controls.Add(checkBox1);
@@ -206,5 +227,7 @@
         private CheckBox checkBox1;
         private CheckBox checkBox2;
         private Label label6;
+        private TextBox textBox5;
+        private Label label7;
     }
 }

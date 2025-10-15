@@ -1,16 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using static System.Windows.Forms.DataFormats;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using Grupo_N_7___Libreta_Sanitaria; 
+
 
 namespace Grupo_N_7___Libreta_Sanitaria
 {
@@ -46,6 +36,9 @@ namespace Grupo_N_7___Libreta_Sanitaria
         private void button1_Click_1(object sender, EventArgs e) // Alta Mascota
         {
             {
+                Form1 Carga_Mascota= new Form1();
+                Carga_Mascota.Show();
+                this.Hide();
 
             }
         }
