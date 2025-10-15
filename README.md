@@ -33,7 +33,6 @@ Permita gestionar la información sanitaria de las mascotas, el seguimiento méd
 2. Permitir el **registro de una mascota** (AMB Mascotas)
 3. Facilitar la **gestión completa de las mascotas**, incluyendo vacunaciones, tratamientos y turnos.
 4. Ofrecer **recordatorios automáticos y notificaciones** sobre vacunas y citas próximas.
-5. Garantizar la **funcionalidad offline**, sincronizando los datos cuando se recupere la conexión.
 
 
  **Funcionalidades con Alta, Baja y Modificación**
