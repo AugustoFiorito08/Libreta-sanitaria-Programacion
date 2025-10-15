@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\franc\\Desktop\\ICES\\Ingeneria de SW - VSCode\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria.csproj": {}
+    "C:\\Users\\franc\\Desktop\\ICES\\Programacion 1\\Libreta-sanitaria-Programacion\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria.csproj": {}
   },
   "projects": {
-    "C:\\Users\\franc\\Desktop\\ICES\\Ingeneria de SW - VSCode\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria.csproj": {
+    "C:\\Users\\franc\\Desktop\\ICES\\Programacion 1\\Libreta-sanitaria-Programacion\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\franc\\Desktop\\ICES\\Ingeneria de SW - VSCode\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria.csproj",
+        "projectUniqueName": "C:\\Users\\franc\\Desktop\\ICES\\Programacion 1\\Libreta-sanitaria-Programacion\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria.csproj",
         "projectName": "Grupo N°7 - Libreta Sanitaria",
-        "projectPath": "C:\\Users\\franc\\Desktop\\ICES\\Ingeneria de SW - VSCode\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria.csproj",
+        "projectPath": "C:\\Users\\franc\\Desktop\\ICES\\Programacion 1\\Libreta-sanitaria-Programacion\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria.csproj",
         "packagesPath": "C:\\Users\\franc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\franc\\Desktop\\ICES\\Ingeneria de SW - VSCode\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria\\obj\\",
+        "outputPath": "C:\\Users\\franc\\Desktop\\ICES\\Programacion 1\\Libreta-sanitaria-Programacion\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
