@@ -171,7 +171,7 @@
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(469, 129);
+            textBox5.Location = new Point(469, 133);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(177, 27);
             textBox5.TabIndex = 15;
