@@ -64,3 +64,4 @@ C:\Users\franc\Desktop\ICES\Programacion 1\Libreta-sanitaria-Programacion\Grupo 
 C:\Users\franc\Desktop\ICES\Programacion 1\Libreta-sanitaria-Programacion\Grupo N°7 - Libreta Sanitaria\Grupo N°7 - Libreta Sanitaria\obj\Debug\net8.0-windows\Grupo N°7 - Libreta Sanitaria.pdb
 C:\Users\franc\Desktop\ICES\Programacion 1\Libreta-sanitaria-Programacion\Grupo N°7 - Libreta Sanitaria\Grupo N°7 - Libreta Sanitaria\obj\Debug\net8.0-windows\Grupo N°7 - Libreta Sanitaria.genruntimeconfig.cache
 C:\Users\franc\Desktop\ICES\Programacion 1\Libreta-sanitaria-Programacion\Grupo N°7 - Libreta Sanitaria\Grupo N°7 - Libreta Sanitaria\obj\Debug\net8.0-windows\ref\Grupo N°7 - Libreta Sanitaria.dll
+C:\Users\franc\Desktop\ICES\Programacion 1\Libreta-sanitaria-Programacion\Grupo N°7 - Libreta Sanitaria\Grupo N°7 - Libreta Sanitaria\obj\Debug\net8.0-windows\Grupo_N_7___Libreta_Sanitaria.Borrar_Mascota.resources

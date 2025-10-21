@@ -35,10 +35,13 @@ namespace Grupo_N_7___Libreta_Sanitaria
             if (checkBox1.Checked)
             {
                 textBox1.Enabled = true;
+                textBox1.Show();
+
             }
             else
             {
                 textBox1.Enabled = false;
+                textBox1.Hide();
             }
         }
 
@@ -47,10 +50,13 @@ namespace Grupo_N_7___Libreta_Sanitaria
             if (checkBox2.Checked)
             {
                 textBox2.Enabled = true;
+                textBox2.Show();    
             }
             else
             {
+                
                 textBox2.Enabled = false;
+                textBox2.Hide();
             }
         }
 
@@ -82,7 +88,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
             {
                 button1.Enabled = false;
             }
-           // Logica para modificar datos 
+           
 
         }
     }

@@ -32,66 +32,84 @@
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
-            button4 = new Button();
+            button5 = new Button();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = SystemColors.ActiveCaption;
-            label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.Location = new Point(248, 65);
+            label1.BackColor = SystemColors.MenuHighlight;
+            label1.FlatStyle = FlatStyle.Popup;
+            label1.Font = new Font("Baskerville Old Face", 28.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = SystemColors.ControlLightLight;
+            label1.Location = new Point(243, 60);
             label1.Name = "label1";
-            label1.Size = new Size(242, 38);
+            label1.Size = new Size(343, 53);
             label1.TabIndex = 1;
             label1.Text = "Libreta Sanitaria";
             // 
             // button1
             // 
-            button1.Location = new Point(68, 310);
+            button1.BackColor = SystemColors.MenuHighlight;
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.Font = new Font("Rockwell", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = SystemColors.ControlLightLight;
+            button1.Location = new Point(141, 312);
             button1.Name = "button1";
-            button1.Size = new Size(131, 29);
+            button1.Size = new Size(131, 78);
             button1.TabIndex = 2;
             button1.Text = "Cargar Mascota";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click_1;
             // 
             // button2
             // 
-            button2.Location = new Point(237, 310);
+            button2.BackColor = SystemColors.MenuHighlight;
+            button2.FlatStyle = FlatStyle.Popup;
+            button2.Font = new Font("Rockwell", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.ForeColor = SystemColors.ControlLightLight;
+            button2.Location = new Point(343, 312);
             button2.Name = "button2";
-            button2.Size = new Size(144, 29);
+            button2.Size = new Size(131, 78);
             button2.TabIndex = 3;
             button2.Text = "Modificar Mascota";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // button3
             // 
-            button3.Location = new Point(413, 310);
+            button3.BackColor = SystemColors.MenuHighlight;
+            button3.FlatStyle = FlatStyle.Popup;
+            button3.Font = new Font("Rockwell", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button3.ForeColor = SystemColors.ControlLightLight;
+            button3.Location = new Point(555, 312);
             button3.Name = "button3";
-            button3.Size = new Size(131, 29);
+            button3.Size = new Size(131, 78);
             button3.TabIndex = 4;
             button3.Text = "Borrar Mascota";
-            button3.UseVisualStyleBackColor = true;
+            button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
-            // button4
+            // button5
             // 
-            button4.Location = new Point(584, 310);
-            button4.Name = "button4";
-            button4.Size = new Size(153, 29);
-            button4.TabIndex = 5;
-            button4.Text = "Agregar Vacunacion";
-            button4.UseVisualStyleBackColor = true;
-            button4.Click += button4_Click;
+            button5.BackColor = SystemColors.MenuHighlight;
+            button5.FlatStyle = FlatStyle.Popup;
+            button5.Font = new Font("Rockwell", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button5.ForeColor = SystemColors.ControlLightLight;
+            button5.Location = new Point(343, 186);
+            button5.Name = "button5";
+            button5.Size = new Size(131, 78);
+            button5.TabIndex = 6;
+            button5.Text = "Ver Perfil Mascota";
+            button5.UseVisualStyleBackColor = false;
             // 
             // Menu_Principal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(800, 450);
-            Controls.Add(button4);
+            Controls.Add(button5);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -107,6 +125,6 @@
         private Button button1;
         private Button button2;
         private Button button3;
-        private Button button4;
+        private Button button5;
     }
 }
