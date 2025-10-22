@@ -68,14 +68,14 @@ namespace Grupo_N_7___Libreta_Sanitaria
                 return;
             }
             List<Mascota> mascotas = MascotaRepository.verMascotas();
-            if (mascotas == null || !mascotas.Any(m => m.ID_Mascota == int.Parse(textBox3.Text)))
+            if (mascotas == null || !mascotas.Any(m => m.Id_Mascota == int.Parse(textBox3.Text)))
             {
                 MessageBox.Show("No se encontró una mascota con el ID proporcionado.");
                 return;
             }
 
             MessageBox.Show("Modificación realizada con éxito");
-            Mascota.modificarDatosMascota(mascotas.First(m => m.ID_Mascota == int.Parse(textBox3.Text)), textBox1.Text, int.Parse(textBox2.Text));
+            Mascota.modificarDatosMascota(mascotas.First(m => m.Id_Mascota == int.Parse(textBox3.Text)), textBox1.Text, int.Parse(textBox2.Text));
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e) // ID Mascota

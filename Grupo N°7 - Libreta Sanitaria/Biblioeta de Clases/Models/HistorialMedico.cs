@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,7 +16,8 @@ namespace Biblioeta_de_Clases.Models
         public string Descripcion { get; set; }
         public string Observaciones { get; set; }
 
-        public int ID_Mascota { get; set; }
+
+        [ForeignKey("Mascota")] public int Id_Mascota { get; set; }
         public Mascota Mascota { get; set; }
 
     }

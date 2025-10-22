@@ -4,7 +4,7 @@
     <Compile Update="Borrar Mascota.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Carga Mascotas.cs">
+    <Compile Update="Alta Mascota.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Perfil Mascota.cs">

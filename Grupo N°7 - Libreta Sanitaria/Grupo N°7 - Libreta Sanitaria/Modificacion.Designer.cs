@@ -47,7 +47,7 @@
             label1.BackColor = SystemColors.MenuHighlight;
             label1.Font = new Font("Rockwell", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.ControlLightLight;
-            label1.Location = new Point(254, 31);
+            label1.Location = new Point(149, 30);
             label1.Name = "label1";
             label1.Size = new Size(317, 33);
             label1.TabIndex = 0;
@@ -128,9 +128,9 @@
             button1.FlatStyle = FlatStyle.Popup;
             button1.Font = new Font("Rockwell", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = SystemColors.ControlLightLight;
-            button1.Location = new Point(203, 342);
+            button1.Location = new Point(498, 143);
             button1.Name = "button1";
-            button1.Size = new Size(147, 63);
+            button1.Size = new Size(150, 70);
             button1.TabIndex = 8;
             button1.Text = "Modificar Datos ";
             button1.UseVisualStyleBackColor = false;
@@ -160,7 +160,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(682, 353);
             Controls.Add(textBox3);
             Controls.Add(label5);
             Controls.Add(button1);

@@ -47,9 +47,9 @@
             button1.BackColor = SystemColors.MenuHighlight;
             button1.FlatStyle = FlatStyle.Popup;
             button1.ForeColor = SystemColors.ControlLightLight;
-            button1.Location = new Point(132, 350);
+            button1.Location = new Point(455, 179);
             button1.Name = "button1";
-            button1.Size = new Size(141, 87);
+            button1.Size = new Size(150, 70);
             button1.TabIndex = 0;
             button1.Text = "Borrar Mascota";
             button1.UseVisualStyleBackColor = false;
@@ -162,7 +162,7 @@
             AutoScaleDimensions = new SizeF(10F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(450, 449);
+            ClientSize = new Size(682, 353);
             Controls.Add(textBox4);
             Controls.Add(textBox3);
             Controls.Add(textBox2);

@@ -20,17 +20,22 @@ namespace Biblioeta_de_Clases.Data
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=localhost;Database=LibretaSanitariaDB;Trusted_Connection=True;TrustServerCertificate=False;");
+                optionsBuilder.UseSqlServer("Server=localhost;Database=LibretaSanitariaDB;Trusted_Connection=True;TrustServerCertificate=True;");
             }
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<HistorialMedico>().HasNoKey();
-            modelBuilder.Entity<Vacuna>().HasNoKey();
-            modelBuilder.Entity<Mascota>().HasNoKey();
+            modelBuilder.Entity<HistorialMedico>().HasKey(h => h.Id_HistorialMedico);
+            modelBuilder.Entity<Vacuna>().HasKey(v => v.Id_Vacuna);
+            modelBuilder.Entity<Mascota>().HasKey(m => m.Id_Mascota);
 
+            modelBuilder.Entity<HistorialMedico>()
+            .HasOne(h => h.Mascota)
+            .WithMany(m => m.Historial)
+            .HasForeignKey(h => h.Id_Mascota)
+            .OnDelete(DeleteBehavior.Cascade);
         }
 
 

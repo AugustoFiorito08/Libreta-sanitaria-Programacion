@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,7 +10,7 @@ namespace Biblioeta_de_Clases.Models
 {
     public class Vacuna
     {
-        public int ID_Vacuna { get; set; }
+        [Key] public int Id_Vacuna { get; set; }
         public string Nombre { get; set; }
         public string Dosis { get; set; }
         public string Tipo { get; set; }
@@ -16,7 +18,7 @@ namespace Biblioeta_de_Clases.Models
         public string Lugar { get; set; }
 
         // Relación con Mascota
-        public int ID_Mascota { get; set; }
+        [ForeignKey("Mascota")] public int Id_Mascota { get; set; }
         public Mascota Mascota { get; set; }
     }
 }

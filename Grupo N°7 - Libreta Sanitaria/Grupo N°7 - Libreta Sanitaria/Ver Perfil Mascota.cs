@@ -26,5 +26,10 @@ namespace Grupo_N_7___Libreta_Sanitaria
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -42,7 +42,7 @@
             label1.FlatStyle = FlatStyle.Popup;
             label1.Font = new Font("Baskerville Old Face", 28.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.ControlLightLight;
-            label1.Location = new Point(243, 60);
+            label1.Location = new Point(176, 23);
             label1.Name = "label1";
             label1.Size = new Size(343, 53);
             label1.TabIndex = 1;
@@ -54,9 +54,9 @@
             button1.FlatStyle = FlatStyle.Popup;
             button1.Font = new Font("Rockwell", 10.2F);
             button1.ForeColor = SystemColors.ControlLightLight;
-            button1.Location = new Point(141, 312);
+            button1.Location = new Point(56, 250);
             button1.Name = "button1";
-            button1.Size = new Size(131, 78);
+            button1.Size = new Size(150, 70);
             button1.TabIndex = 2;
             button1.Text = "Cargar Mascota";
             button1.UseVisualStyleBackColor = false;
@@ -68,9 +68,9 @@
             button2.FlatStyle = FlatStyle.Popup;
             button2.Font = new Font("Rockwell", 10.2F);
             button2.ForeColor = SystemColors.ControlLightLight;
-            button2.Location = new Point(343, 312);
+            button2.Location = new Point(258, 250);
             button2.Name = "button2";
-            button2.Size = new Size(131, 78);
+            button2.Size = new Size(150, 70);
             button2.TabIndex = 3;
             button2.Text = "Modificar Mascota";
             button2.UseVisualStyleBackColor = false;
@@ -82,9 +82,9 @@
             button3.FlatStyle = FlatStyle.Popup;
             button3.Font = new Font("Rockwell", 10.2F);
             button3.ForeColor = SystemColors.ControlLightLight;
-            button3.Location = new Point(555, 312);
+            button3.Location = new Point(470, 250);
             button3.Name = "button3";
-            button3.Size = new Size(131, 78);
+            button3.Size = new Size(150, 70);
             button3.TabIndex = 4;
             button3.Text = "Borrar Mascota";
             button3.UseVisualStyleBackColor = false;
@@ -96,9 +96,9 @@
             button5.FlatStyle = FlatStyle.Popup;
             button5.Font = new Font("Rockwell", 10.2F);
             button5.ForeColor = SystemColors.ControlLightLight;
-            button5.Location = new Point(343, 186);
+            button5.Location = new Point(258, 141);
             button5.Name = "button5";
-            button5.Size = new Size(131, 78);
+            button5.Size = new Size(150, 70);
             button5.TabIndex = 6;
             button5.Text = "Ver Perfil Mascota";
             button5.UseVisualStyleBackColor = false;
@@ -108,7 +108,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(682, 353);
             Controls.Add(button5);
             Controls.Add(button3);
             Controls.Add(button2);

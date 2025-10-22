@@ -36,7 +36,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
         private void button1_Click_1(object sender, EventArgs e) // Alta Mascota
         {
             {
-                Form1 Carga_Mascota= new Form1();
+                Alta_Mascota Carga_Mascota= new Alta_Mascota();
                 Carga_Mascota.Show();
                 this.Hide();
 
