@@ -13,3 +13,18 @@ C:\Users\franc\Desktop\ICES\Programacion 1\Libreta-sanitaria-Programacion\Grupo 
 C:\Users\franc\Desktop\ICES\Programacion 1\Libreta-sanitaria-Programacion\Grupo N°7 - Libreta Sanitaria\Biblioeta de Clases\obj\Debug\net8.0\Biblioteca de Clases.pdb
 C:\Users\franc\Desktop\ICES\Programacion 1\Libreta-sanitaria-Programacion\Grupo N°7 - Libreta Sanitaria\Biblioeta de Clases\obj\Debug\net8.0\Biblioteca de Clases.genruntimeconfig.cache
 C:\Users\franc\Desktop\ICES\Programacion 1\Libreta-sanitaria-Programacion\Grupo N°7 - Libreta Sanitaria\Biblioeta de Clases\obj\Debug\net8.0\ref\Biblioteca de Clases.dll
+C:\Users\mkevi\OneDrive\Documentos\GitHub\Libreta-sanitaria-Programacion\Grupo N°7 - Libreta Sanitaria\Biblioeta de Clases\bin\Debug\net8.0\Biblioteca de Clases.deps.json
+C:\Users\mkevi\OneDrive\Documentos\GitHub\Libreta-sanitaria-Programacion\Grupo N°7 - Libreta Sanitaria\Biblioeta de Clases\bin\Debug\net8.0\Biblioteca de Clases.runtimeconfig.json
+C:\Users\mkevi\OneDrive\Documentos\GitHub\Libreta-sanitaria-Programacion\Grupo N°7 - Libreta Sanitaria\Biblioeta de Clases\bin\Debug\net8.0\Biblioteca de Clases.dll
+C:\Users\mkevi\OneDrive\Documentos\GitHub\Libreta-sanitaria-Programacion\Grupo N°7 - Libreta Sanitaria\Biblioeta de Clases\bin\Debug\net8.0\Biblioteca de Clases.pdb
+C:\Users\mkevi\OneDrive\Documentos\GitHub\Libreta-sanitaria-Programacion\Grupo N°7 - Libreta Sanitaria\Biblioeta de Clases\obj\Debug\net8.0\Biblioteca de Clases.csproj.AssemblyReference.cache
+C:\Users\mkevi\OneDrive\Documentos\GitHub\Libreta-sanitaria-Programacion\Grupo N°7 - Libreta Sanitaria\Biblioeta de Clases\obj\Debug\net8.0\Biblioteca de Clases.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mkevi\OneDrive\Documentos\GitHub\Libreta-sanitaria-Programacion\Grupo N°7 - Libreta Sanitaria\Biblioeta de Clases\obj\Debug\net8.0\Biblioteca de Clases.AssemblyInfoInputs.cache
+C:\Users\mkevi\OneDrive\Documentos\GitHub\Libreta-sanitaria-Programacion\Grupo N°7 - Libreta Sanitaria\Biblioeta de Clases\obj\Debug\net8.0\Biblioteca de Clases.AssemblyInfo.cs
+C:\Users\mkevi\OneDrive\Documentos\GitHub\Libreta-sanitaria-Programacion\Grupo N°7 - Libreta Sanitaria\Biblioeta de Clases\obj\Debug\net8.0\Biblioteca de Clases.csproj.CoreCompileInputs.cache
+C:\Users\mkevi\OneDrive\Documentos\GitHub\Libreta-sanitaria-Programacion\Grupo N°7 - Libreta Sanitaria\Biblioeta de Clases\obj\Debug\net8.0\Biblioteca de Clases.sourcelink.json
+C:\Users\mkevi\OneDrive\Documentos\GitHub\Libreta-sanitaria-Programacion\Grupo N°7 - Libreta Sanitaria\Biblioeta de Clases\obj\Debug\net8.0\Biblioteca de Clases.dll
+C:\Users\mkevi\OneDrive\Documentos\GitHub\Libreta-sanitaria-Programacion\Grupo N°7 - Libreta Sanitaria\Biblioeta de Clases\obj\Debug\net8.0\refint\Biblioteca de Clases.dll
+C:\Users\mkevi\OneDrive\Documentos\GitHub\Libreta-sanitaria-Programacion\Grupo N°7 - Libreta Sanitaria\Biblioeta de Clases\obj\Debug\net8.0\Biblioteca de Clases.pdb
+C:\Users\mkevi\OneDrive\Documentos\GitHub\Libreta-sanitaria-Programacion\Grupo N°7 - Libreta Sanitaria\Biblioeta de Clases\obj\Debug\net8.0\Biblioteca de Clases.genruntimeconfig.cache
+C:\Users\mkevi\OneDrive\Documentos\GitHub\Libreta-sanitaria-Programacion\Grupo N°7 - Libreta Sanitaria\Biblioeta de Clases\obj\Debug\net8.0\ref\Biblioteca de Clases.dll

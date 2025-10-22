@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\franc\\Desktop\\ICES\\Programacion 1\\Libreta-sanitaria-Programacion\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria.csproj": {}
+    "C:\\Users\\mkevi\\OneDrive\\Documentos\\GitHub\\Libreta-sanitaria-Programacion\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria.csproj": {}
   },
   "projects": {
-    "C:\\Users\\franc\\Desktop\\ICES\\Programacion 1\\Libreta-sanitaria-Programacion\\Grupo N°7 - Libreta Sanitaria\\Biblioeta de Clases\\Biblioteca de Clases.csproj": {
+    "C:\\Users\\mkevi\\OneDrive\\Documentos\\GitHub\\Libreta-sanitaria-Programacion\\Grupo N°7 - Libreta Sanitaria\\Biblioeta de Clases\\Biblioteca de Clases.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\franc\\Desktop\\ICES\\Programacion 1\\Libreta-sanitaria-Programacion\\Grupo N°7 - Libreta Sanitaria\\Biblioeta de Clases\\Biblioteca de Clases.csproj",
+        "projectUniqueName": "C:\\Users\\mkevi\\OneDrive\\Documentos\\GitHub\\Libreta-sanitaria-Programacion\\Grupo N°7 - Libreta Sanitaria\\Biblioeta de Clases\\Biblioteca de Clases.csproj",
         "projectName": "Biblioteca de Clases",
-        "projectPath": "C:\\Users\\franc\\Desktop\\ICES\\Programacion 1\\Libreta-sanitaria-Programacion\\Grupo N°7 - Libreta Sanitaria\\Biblioeta de Clases\\Biblioteca de Clases.csproj",
-        "packagesPath": "C:\\Users\\franc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\franc\\Desktop\\ICES\\Programacion 1\\Libreta-sanitaria-Programacion\\Grupo N°7 - Libreta Sanitaria\\Biblioeta de Clases\\obj\\",
+        "projectPath": "C:\\Users\\mkevi\\OneDrive\\Documentos\\GitHub\\Libreta-sanitaria-Programacion\\Grupo N°7 - Libreta Sanitaria\\Biblioeta de Clases\\Biblioteca de Clases.csproj",
+        "packagesPath": "C:\\Users\\mkevi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mkevi\\OneDrive\\Documentos\\GitHub\\Libreta-sanitaria-Programacion\\Grupo N°7 - Libreta Sanitaria\\Biblioeta de Clases\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\franc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mkevi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -76,43 +76,29 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.21, 8.0.21]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.21, 8.0.21]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.21, 8.0.21]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\franc\\Desktop\\ICES\\Programacion 1\\Libreta-sanitaria-Programacion\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria.csproj": {
+    "C:\\Users\\mkevi\\OneDrive\\Documentos\\GitHub\\Libreta-sanitaria-Programacion\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\franc\\Desktop\\ICES\\Programacion 1\\Libreta-sanitaria-Programacion\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria.csproj",
+        "projectUniqueName": "C:\\Users\\mkevi\\OneDrive\\Documentos\\GitHub\\Libreta-sanitaria-Programacion\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria.csproj",
         "projectName": "Grupo N°7 - Libreta Sanitaria",
-        "projectPath": "C:\\Users\\franc\\Desktop\\ICES\\Programacion 1\\Libreta-sanitaria-Programacion\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria.csproj",
-        "packagesPath": "C:\\Users\\franc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\franc\\Desktop\\ICES\\Programacion 1\\Libreta-sanitaria-Programacion\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria\\obj\\",
+        "projectPath": "C:\\Users\\mkevi\\OneDrive\\Documentos\\GitHub\\Libreta-sanitaria-Programacion\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria.csproj",
+        "packagesPath": "C:\\Users\\mkevi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mkevi\\OneDrive\\Documentos\\GitHub\\Libreta-sanitaria-Programacion\\Grupo N°7 - Libreta Sanitaria\\Grupo N°7 - Libreta Sanitaria\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\franc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mkevi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -127,8 +113,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\franc\\Desktop\\ICES\\Programacion 1\\Libreta-sanitaria-Programacion\\Grupo N°7 - Libreta Sanitaria\\Biblioeta de Clases\\Biblioteca de Clases.csproj": {
-                "projectPath": "C:\\Users\\franc\\Desktop\\ICES\\Programacion 1\\Libreta-sanitaria-Programacion\\Grupo N°7 - Libreta Sanitaria\\Biblioeta de Clases\\Biblioteca de Clases.csproj"
+              "C:\\Users\\mkevi\\OneDrive\\Documentos\\GitHub\\Libreta-sanitaria-Programacion\\Grupo N°7 - Libreta Sanitaria\\Biblioeta de Clases\\Biblioteca de Clases.csproj": {
+                "projectPath": "C:\\Users\\mkevi\\OneDrive\\Documentos\\GitHub\\Libreta-sanitaria-Programacion\\Grupo N°7 - Libreta Sanitaria\\Biblioeta de Clases\\Biblioteca de Clases.csproj"
               }
             }
           }
@@ -143,7 +129,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -175,24 +161,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.21, 8.0.21]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[8.0.21, 8.0.21]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.21, 8.0.21]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.21, 8.0.21]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -201,7 +169,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
