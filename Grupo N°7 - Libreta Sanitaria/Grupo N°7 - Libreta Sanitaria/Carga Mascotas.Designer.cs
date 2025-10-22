@@ -49,7 +49,7 @@
             // 
             button1.BackColor = SystemColors.MenuHighlight;
             button1.FlatStyle = FlatStyle.Popup;
-            button1.Font = new Font("Rockwell", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Font = new Font("Rockwell", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button1.ForeColor = SystemColors.ControlLightLight;
             button1.Location = new Point(538, 141);
             button1.Name = "button1";
@@ -173,10 +173,12 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(275, 24);
+            label6.BackColor = SystemColors.MenuHighlight;
+            label6.Font = new Font("Rockwell", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = SystemColors.ControlLightLight;
+            label6.Location = new Point(278, 27);
             label6.Name = "label6";
-            label6.Size = new Size(186, 31);
+            label6.Size = new Size(236, 33);
             label6.TabIndex = 14;
             label6.Text = "Alta de Mascota";
             // 

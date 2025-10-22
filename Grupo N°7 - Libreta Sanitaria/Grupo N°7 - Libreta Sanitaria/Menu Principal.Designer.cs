@@ -52,7 +52,7 @@
             // 
             button1.BackColor = SystemColors.MenuHighlight;
             button1.FlatStyle = FlatStyle.Popup;
-            button1.Font = new Font("Rockwell", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Font = new Font("Rockwell", 10.2F);
             button1.ForeColor = SystemColors.ControlLightLight;
             button1.Location = new Point(141, 312);
             button1.Name = "button1";
@@ -66,7 +66,7 @@
             // 
             button2.BackColor = SystemColors.MenuHighlight;
             button2.FlatStyle = FlatStyle.Popup;
-            button2.Font = new Font("Rockwell", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.Font = new Font("Rockwell", 10.2F);
             button2.ForeColor = SystemColors.ControlLightLight;
             button2.Location = new Point(343, 312);
             button2.Name = "button2";
@@ -80,7 +80,7 @@
             // 
             button3.BackColor = SystemColors.MenuHighlight;
             button3.FlatStyle = FlatStyle.Popup;
-            button3.Font = new Font("Rockwell", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button3.Font = new Font("Rockwell", 10.2F);
             button3.ForeColor = SystemColors.ControlLightLight;
             button3.Location = new Point(555, 312);
             button3.Name = "button3";
@@ -94,7 +94,7 @@
             // 
             button5.BackColor = SystemColors.MenuHighlight;
             button5.FlatStyle = FlatStyle.Popup;
-            button5.Font = new Font("Rockwell", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button5.Font = new Font("Rockwell", 10.2F);
             button5.ForeColor = SystemColors.ControlLightLight;
             button5.Location = new Point(343, 186);
             button5.Name = "button5";

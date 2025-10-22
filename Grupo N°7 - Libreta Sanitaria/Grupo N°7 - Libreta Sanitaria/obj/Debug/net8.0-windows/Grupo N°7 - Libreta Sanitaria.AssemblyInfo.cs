@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Grupo N°7 - Libreta Sanitaria")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36bf73e950cf9f48b06d2fb4294dab99ddbe1809")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+952580f80c5e7eaae5242d656bc06ee3ebfa079f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Grupo N°7 - Libreta Sanitaria")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Grupo N°7 - Libreta Sanitaria")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

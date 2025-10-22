@@ -21,6 +21,13 @@ namespace Biblioeta_de_Clases.Repository
             using var context = new ApplicationDbContext();
             return context.Mascotas.ToList();
         }
+        public static void BorrarMascota(Mascota mascota)
+        {
+            using var context = new ApplicationDbContext();
+
+                context.Mascotas.Remove(mascota);
+                context.SaveChanges();
+        }
         public static void guardarCambios()
         {
             using var context = new ApplicationDbContext();

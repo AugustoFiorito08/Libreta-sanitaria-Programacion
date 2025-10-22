@@ -132,7 +132,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e) // Especie
         {
         
-            comboBox1.Items.Clear(); // limpia las razas anteriores
+            comboBox1.Items.Clear(); 
 
             string especieSeleccionada = comboBox2.SelectedItem.ToString();
 
@@ -148,7 +148,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
                 case "Gato":
                     comboBox1.Items.AddRange(new string[]
                     {
-                "Siames", "Persa", "Bengala", "Maine Coon", "Sphynx"
+                "Siames", "Persa", "Bengala"
                     });
                     break;
 

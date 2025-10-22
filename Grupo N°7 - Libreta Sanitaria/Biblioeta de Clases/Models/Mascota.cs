@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Biblioeta_de_Clases.Repository;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -32,5 +33,6 @@ namespace Biblioeta_de_Clases.Models
             mascota.Nombre = nombre;
             mascota.Peso = peso;
         }
+
     }
 }

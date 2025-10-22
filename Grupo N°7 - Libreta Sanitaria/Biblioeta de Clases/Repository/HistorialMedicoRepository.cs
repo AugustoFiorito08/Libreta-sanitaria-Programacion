@@ -14,13 +14,13 @@ namespace Biblioeta_de_Clases.Repository
         public static void GuardarHistorial(HistorialMedico historial)
         {
             using var context = new ApplicationDbContext();
-            context.Historiales.Add(historial);
+            context.HistorialesMedicos.Add(historial);
             context.SaveChanges();
         }
         public static List<HistorialMedico> verHistoriales()
         {
             using var context = new ApplicationDbContext();
-            return context.Historiales.ToList();
+            return context.HistorialesMedicos.ToList();
         }
         public static void guardarCambios()
         {
