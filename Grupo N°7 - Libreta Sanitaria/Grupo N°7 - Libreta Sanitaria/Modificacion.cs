@@ -50,11 +50,11 @@ namespace Grupo_N_7___Libreta_Sanitaria
             if (checkBox2.Checked)
             {
                 textBox2.Enabled = true;
-                textBox2.Show();    
+                textBox2.Show();
             }
             else
             {
-                
+
                 textBox2.Enabled = false;
                 textBox2.Hide();
             }
@@ -64,18 +64,18 @@ namespace Grupo_N_7___Libreta_Sanitaria
         {
             if (textBox3.Text == "")
             {
-                MessageBox.Show("Debe ingresar un ID de mascota válido.");
+                MessageBox.Show("Debe ingresar un ID de mascota válido");
                 return;
             }
             List<Mascota> mascotas = MascotaRepository.verMascotas();
             if (mascotas == null || !mascotas.Any(m => m.Id_Mascota == int.Parse(textBox3.Text)))
             {
-                MessageBox.Show("No se encontró una mascota con el ID proporcionado.");
+                MessageBox.Show("No se encontró una mascota con el ID proporcionado");
                 return;
             }
-
             MessageBox.Show("Modificación realizada con éxito");
-            Mascota.modificarDatosMascota(mascotas.First(m => m.Id_Mascota == int.Parse(textBox3.Text)), textBox1.Text, int.Parse(textBox2.Text));
+            Mascota.modificarDatosMascota(mascotas.First(m => m.Id_Mascota == int.Parse(textBox3.Text)), textBox1.Text.ToLower(),
+                int.Parse(textBox2.Text));
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e) // ID Mascota
@@ -88,8 +88,19 @@ namespace Grupo_N_7___Libreta_Sanitaria
             {
                 button1.Enabled = false;
             }
-           
 
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Modificacion_Load(object sender, EventArgs e)
+        {
+            textBox1.Hide();
+            textBox2.Hide();
         }
     }
 }

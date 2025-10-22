@@ -21,7 +21,7 @@ namespace Biblioeta_de_Clases.Migrations
                     Especie = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Raza = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Sexo = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Peso = table.Column<int>(type: "int", nullable: false),
+                    Peso = table.Column<float>(type: "real", nullable: false),
                     NombreDuenio = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>

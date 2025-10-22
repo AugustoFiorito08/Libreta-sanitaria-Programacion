@@ -24,14 +24,25 @@ namespace Biblioeta_de_Clases.Repository
         public static void BorrarMascota(Mascota mascota)
         {
             using var context = new ApplicationDbContext();
-
-                context.Mascotas.Remove(mascota);
-                context.SaveChanges();
-        }
-        public static void guardarCambios()
-        {
-            using var context = new ApplicationDbContext();
+            var mascotaAEliminar = context.Mascotas.Find(mascota.Id_Mascota);
+            
+            context.Mascotas.Remove(mascotaAEliminar);
             context.SaveChanges();
+        }
+
+
+        public static Mascota BuscarMascotaPorCampos(string nombreDueno, string nombreMascota, string especie, string raza)
+        {
+            using (var context = new ApplicationDbContext())
+            {
+                Mascota mascotaEncontrada = context.Mascotas
+                    .FirstOrDefault(m =>
+                        m.NombreDuenio.ToLower() == nombreDueno.ToLower() &&
+                        m.Nombre.ToLower() == nombreMascota.ToLower() &&
+                        m.Especie.ToLower() == especie.ToLower() &&
+                        m.Raza.ToLower() == raza.ToLower());
+                return mascotaEncontrada;
+            }
         }
 
     }

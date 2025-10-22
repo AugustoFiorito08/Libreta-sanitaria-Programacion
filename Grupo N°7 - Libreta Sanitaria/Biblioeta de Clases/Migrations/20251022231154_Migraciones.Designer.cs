@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Biblioeta_de_Clases.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20251022202334_Migraciones")]
+    [Migration("20251022231154_Migraciones")]
     partial class Migraciones
     {
         /// <inheritdoc />
@@ -74,8 +74,8 @@ namespace Biblioeta_de_Clases.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Peso")
-                        .HasColumnType("int");
+                    b.Property<float>("Peso")
+                        .HasColumnType("real");
 
                     b.Property<string>("Raza")
                         .IsRequired()

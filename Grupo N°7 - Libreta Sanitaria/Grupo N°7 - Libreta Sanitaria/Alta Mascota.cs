@@ -31,11 +31,12 @@ namespace Grupo_N_7___Libreta_Sanitaria
                 sexo = "Hembra";
                 checkBox1.Enabled = false;
             }
-            string nombre = textBox1.Text;
-            string especie = comboBox2.SelectedItem.ToString();
-            string raza = comboBox1.SelectedItem.ToString();
-            int peso = int.Parse(textBox2.Text);
-            string nombreDuenio = textBox5.Text;
+            string nombre = textBox1.Text.ToLower().Trim();
+            string especie = comboBox2.SelectedItem.ToString().ToLower().Trim();
+            string raza = comboBox1.SelectedItem.ToString().ToLower().Trim();
+            float peso = float.Parse(textBox2.Text);
+            
+            string nombreDuenio = textBox5.Text.ToLower();
             Mascota mascota = new Mascota(nombre, especie, raza, peso, sexo, nombreDuenio);
             MascotaRepository.GuardarMascota(mascota);
         }
@@ -124,15 +125,15 @@ namespace Grupo_N_7___Libreta_Sanitaria
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e) // Raza
         {
-            
-            
+
+
 
         }
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e) // Especie
         {
-        
-            comboBox1.Items.Clear(); 
+
+            comboBox1.Items.Clear();
 
             string especieSeleccionada = comboBox2.SelectedItem.ToString();
 
@@ -169,13 +170,18 @@ namespace Grupo_N_7___Libreta_Sanitaria
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            
-            comboBox2.Items.AddRange (new string [] {"Perro", "Gato", "Ave", "Roedor"});
+
+            comboBox2.Items.AddRange(new string[] { "Perro", "Gato", "Ave", "Roedor" });
             comboBox1.Items.Clear();
             comboBox1.SelectedIndex = -1;
             comboBox2.SelectedIndex = -1;
 
 
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

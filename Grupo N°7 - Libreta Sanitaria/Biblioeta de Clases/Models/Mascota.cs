@@ -16,11 +16,11 @@ namespace Biblioeta_de_Clases.Models
         public string Especie { get; set; }
         public string Raza { get; set; }
         public string Sexo { get; set; }
-        public int Peso { get; set; }        
+        public float Peso { get; set; }        
         public string NombreDuenio { get; set; }
-        public List<HistorialMedico> Historial { get; set; } 
-        public Mascota( string nombre, string especie, string raza, int peso, string sexo, string nombreDuenio )
-        {           
+        public List<HistorialMedico> Historial { get; set; }
+        public Mascota( string nombre, string especie, string raza, float peso, string sexo, string nombreDuenio )
+        {   
             Nombre = nombre;
             Especie = especie;
             Raza = raza;
@@ -29,7 +29,7 @@ namespace Biblioeta_de_Clases.Models
             NombreDuenio = nombreDuenio;
             Historial = new List<HistorialMedico>();
         }
-        public static void modificarDatosMascota(Mascota mascota, string nombre, int peso)
+        public static void modificarDatosMascota(Mascota mascota, string nombre, float peso)
         {
             mascota.Nombre = nombre;
             mascota.Peso = peso;

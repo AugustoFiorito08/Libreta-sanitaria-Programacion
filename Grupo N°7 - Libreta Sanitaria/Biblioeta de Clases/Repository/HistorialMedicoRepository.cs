@@ -22,10 +22,5 @@ namespace Biblioeta_de_Clases.Repository
             using var context = new ApplicationDbContext();
             return context.HistorialesMedicos.ToList();
         }
-        public static void guardarCambios()
-        {
-            using var context = new ApplicationDbContext();
-            context.SaveChanges();
-        }
     }
 }

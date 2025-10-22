@@ -39,6 +39,7 @@
             button1 = new Button();
             label5 = new Label();
             textBox3 = new TextBox();
+            button2 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -155,12 +156,27 @@
             textBox3.TabIndex = 10;
             textBox3.TextChanged += textBox3_TextChanged;
             // 
+            // button2
+            // 
+            button2.BackColor = SystemColors.MenuHighlight;
+            button2.FlatStyle = FlatStyle.Popup;
+            button2.Font = new Font("Rockwell", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button2.ForeColor = SystemColors.ControlLightLight;
+            button2.Location = new Point(12, 12);
+            button2.Name = "button2";
+            button2.Size = new Size(80, 35);
+            button2.TabIndex = 28;
+            button2.Text = "Volver";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
             // Modificacion
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(682, 353);
+            Controls.Add(button2);
             Controls.Add(textBox3);
             Controls.Add(label5);
             Controls.Add(button1);
@@ -174,6 +190,7 @@
             Controls.Add(label1);
             Name = "Modificacion";
             Text = "Modificacion";
+            Load += Modificacion_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -191,5 +208,6 @@
         private Button button1;
         private Label label5;
         private TextBox textBox3;
+        private Button button2;
     }
 }

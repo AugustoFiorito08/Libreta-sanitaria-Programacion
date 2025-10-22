@@ -71,8 +71,8 @@ namespace Biblioeta_de_Clases.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Peso")
-                        .HasColumnType("int");
+                    b.Property<float>("Peso")
+                        .HasColumnType("real");
 
                     b.Property<string>("Raza")
                         .IsRequired()

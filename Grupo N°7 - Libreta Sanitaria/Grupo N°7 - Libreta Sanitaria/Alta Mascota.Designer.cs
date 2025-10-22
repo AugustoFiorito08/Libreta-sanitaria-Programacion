@@ -44,6 +44,7 @@
             comboBox1 = new ComboBox();
             comboBox2 = new ComboBox();
             label8 = new Label();
+            button2 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -138,7 +139,7 @@
             label5.BackColor = SystemColors.ActiveCaption;
             label5.Font = new Font("Rockwell", 10.2F, FontStyle.Bold);
             label5.ForeColor = SystemColors.ControlLightLight;
-            label5.Location = new Point(87, 346);
+            label5.Location = new Point(87, 319);
             label5.Name = "label5";
             label5.Size = new Size(48, 20);
             label5.TabIndex = 11;
@@ -150,7 +151,7 @@
             checkBox1.AutoSize = true;
             checkBox1.Font = new Font("Rockwell", 9F, FontStyle.Bold);
             checkBox1.ForeColor = SystemColors.ControlLightLight;
-            checkBox1.Location = new Point(195, 346);
+            checkBox1.Location = new Point(195, 319);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(81, 22);
             checkBox1.TabIndex = 12;
@@ -163,7 +164,7 @@
             checkBox2.AutoSize = true;
             checkBox2.Font = new Font("Rockwell", 9F, FontStyle.Bold);
             checkBox2.ForeColor = SystemColors.ControlLightLight;
-            checkBox2.Location = new Point(317, 346);
+            checkBox2.Location = new Point(317, 319);
             checkBox2.Name = "checkBox2";
             checkBox2.Size = new Size(90, 22);
             checkBox2.TabIndex = 13;
@@ -244,12 +245,27 @@
             label8.Size = new Size(0, 23);
             label8.TabIndex = 19;
             // 
+            // button2
+            // 
+            button2.BackColor = SystemColors.MenuHighlight;
+            button2.FlatStyle = FlatStyle.Popup;
+            button2.Font = new Font("Rockwell", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button2.ForeColor = SystemColors.ControlLightLight;
+            button2.Location = new Point(12, 12);
+            button2.Name = "button2";
+            button2.Size = new Size(80, 35);
+            button2.TabIndex = 28;
+            button2.Text = "Volver";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click_1;
+            // 
             // Alta_Mascota
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(682, 353);
+            Controls.Add(button2);
             Controls.Add(label8);
             Controls.Add(comboBox2);
             Controls.Add(comboBox1);
@@ -291,5 +307,6 @@
         private ComboBox comboBox1;
         private ComboBox comboBox2;
         private Label label8;
+        private Button button2;
     }
 }

@@ -37,9 +37,10 @@
             checkBox1 = new CheckBox();
             label6 = new Label();
             textBox1 = new TextBox();
-            textBox2 = new TextBox();
             textBox3 = new TextBox();
             textBox4 = new TextBox();
+            comboBox2 = new ComboBox();
+            button2 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -133,14 +134,6 @@
             textBox1.TabIndex = 8;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(115, 229);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(125, 27);
-            textBox2.TabIndex = 9;
-            textBox2.TextChanged += textBox2_TextChanged;
-            // 
             // textBox3
             // 
             textBox3.Location = new Point(115, 183);
@@ -157,15 +150,44 @@
             textBox4.TabIndex = 11;
             textBox4.TextChanged += textBox4_TextChanged;
             // 
+            // comboBox2
+            // 
+            comboBox2.BackColor = Color.White;
+            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox2.FlatStyle = FlatStyle.Popup;
+            comboBox2.Font = new Font("Rockwell", 9F);
+            comboBox2.ForeColor = SystemColors.ActiveCaptionText;
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(115, 228);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(177, 25);
+            comboBox2.TabIndex = 19;
+            comboBox2.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
+            // 
+            // button2
+            // 
+            button2.BackColor = SystemColors.MenuHighlight;
+            button2.FlatStyle = FlatStyle.Popup;
+            button2.Font = new Font("Rockwell", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button2.ForeColor = SystemColors.ControlLightLight;
+            button2.Location = new Point(18, 12);
+            button2.Name = "button2";
+            button2.Size = new Size(80, 35);
+            button2.TabIndex = 28;
+            button2.Text = "Volver";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
             // Borrar_Mascota
             // 
             AutoScaleDimensions = new SizeF(10F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(682, 353);
+            Controls.Add(button2);
+            Controls.Add(comboBox2);
             Controls.Add(textBox4);
             Controls.Add(textBox3);
-            Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(label6);
             Controls.Add(checkBox1);
@@ -196,8 +218,9 @@
         private CheckBox checkBox1;
         private Label label6;
         private TextBox textBox1;
-        private TextBox textBox2;
         private TextBox textBox3;
         private TextBox textBox4;
+        private ComboBox comboBox2;
+        private Button button2;
     }
 }

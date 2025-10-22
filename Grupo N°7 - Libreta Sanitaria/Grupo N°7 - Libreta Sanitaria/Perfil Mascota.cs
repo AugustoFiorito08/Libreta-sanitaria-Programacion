@@ -7,16 +7,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Biblioeta_de_Clases.Migrations;
+using Biblioeta_de_Clases.Models;
+using Biblioeta_de_Clases.Data;
 
 namespace Grupo_N_7___Libreta_Sanitaria
 {
-    public partial class Form2 : Form
+    public partial class PerfilMascota : Form
     {
-        public Form2()
+        public PerfilMascota()
         {
             InitializeComponent();
         }
-
+        public PerfilMascota(Mascota mascota)
+        {
+            InitializeComponent();
+            label1.Text = mascota.Nombre;
+            label2.Text = mascota.Especie;
+            label3.Text = mascota.Raza;
+            label4.Text = mascota.NombreDuenio;
+            foreach (var historial in mascota.Historial)
+            {
+                listBox1.Items.Add($"Fecha: {historial.Fecha.ToShortDateString()}, Descripción: {historial.Descripcion}");
+            }
+        }
         private void InitializeComponent()
         {
             label6 = new Label();
@@ -28,6 +42,8 @@ namespace Grupo_N_7___Libreta_Sanitaria
             label5 = new Label();
             listBox1 = new ListBox();
             button1 = new Button();
+            label8 = new Label();
+            this.button2 = new Button();
             SuspendLayout();
             // 
             // label6
@@ -62,9 +78,8 @@ namespace Grupo_N_7___Libreta_Sanitaria
             label1.ForeColor = SystemColors.ControlLightLight;
             label1.Location = new Point(12, 147);
             label1.Name = "label1";
-            label1.Size = new Size(199, 20);
+            label1.Size = new Size(0, 20);
             label1.TabIndex = 21;
-            label1.Text = "Nombre de la mascota";
             // 
             // label2
             // 
@@ -139,10 +154,37 @@ namespace Grupo_N_7___Libreta_Sanitaria
             button1.Text = "Agregar Vacuna";
             button1.UseVisualStyleBackColor = false;
             // 
-            // Form2
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.ForeColor = SystemColors.ControlLightLight;
+            label8.Location = new Point(12, 147);
+            label8.Name = "label8";
+            label8.Size = new Size(191, 23);
+            label8.TabIndex = 28;
+            label8.Text = "Nombre de la Mascota";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = SystemColors.MenuHighlight;
+            this.button2.FlatStyle = FlatStyle.Popup;
+            this.button2.Font = new Font("Rockwell", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            this.button2.ForeColor = SystemColors.ControlLightLight;
+            this.button2.Location = new Point(21, 19);
+            this.button2.Name = "button2";
+            this.button2.Size = new Size(80, 35);
+            this.button2.TabIndex = 29;
+            this.button2.Text = "Volver";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += this.button2_Click;
+            // 
+            // PerfilMascota
             // 
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(682, 353);
+            Controls.Add(this.button2);
+            Controls.Add(label8);
             Controls.Add(button1);
             Controls.Add(listBox1);
             Controls.Add(label5);
@@ -152,24 +194,24 @@ namespace Grupo_N_7___Libreta_Sanitaria
             Controls.Add(label1);
             Controls.Add(label7);
             Controls.Add(label6);
-            Name = "Form2";
+            Name = "PerfilMascota";
             Load += Form2_Load;
             ResumeLayout(false);
             PerformLayout();
 
         }
-        private Label label6;
-        private Label label7;
-        private Label label1;
+        public Label label6;
+        public Label label7;
+        public Label label1;
 
         private void label7_Click(object sender, EventArgs e)
         {
 
         }
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
+        public Label label2;
+        public Label label3;
+        public Label label4;
+        public Label label5;
         private ListBox listBox1;
 
         private void Form2_Load(object sender, EventArgs e)
@@ -185,7 +227,16 @@ namespace Grupo_N_7___Libreta_Sanitaria
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (label1.Text == "Nombre de la mascota")
+            {
 
+            }
+        }
+        public Label label8;
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

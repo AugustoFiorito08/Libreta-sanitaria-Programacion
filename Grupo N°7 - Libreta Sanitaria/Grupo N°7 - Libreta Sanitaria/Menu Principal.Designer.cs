@@ -102,6 +102,7 @@
             button5.TabIndex = 6;
             button5.Text = "Ver Perfil Mascota";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // Menu_Principal
             // 
@@ -116,6 +117,7 @@
             Controls.Add(label1);
             Name = "Menu_Principal";
             Text = "Menu_Principal";
+            Load += Menu_Principal_Load;
             ResumeLayout(false);
             PerformLayout();
         }

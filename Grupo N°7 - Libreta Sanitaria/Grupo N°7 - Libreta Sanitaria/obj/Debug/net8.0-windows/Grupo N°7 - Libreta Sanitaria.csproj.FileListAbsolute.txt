@@ -3,7 +3,6 @@ C:\Users\franc\Desktop\ICES\Programacion 1\Libreta-sanitaria-Programacion\Grupo 
 C:\Users\franc\Desktop\ICES\Programacion 1\Libreta-sanitaria-Programacion\Grupo N°7 - Libreta Sanitaria\Grupo N°7 - Libreta Sanitaria\obj\Debug\net8.0-windows\Grupo_N_7___Libreta_Sanitaria.Borrar_Mascota.resources
 C:\Users\franc\Desktop\ICES\Programacion 1\Libreta-sanitaria-Programacion\Grupo N°7 - Libreta Sanitaria\Grupo N°7 - Libreta Sanitaria\obj\Debug\net8.0-windows\Grupo_N_7___Libreta_Sanitaria.Menu_Principal.resources
 C:\Users\franc\Desktop\ICES\Programacion 1\Libreta-sanitaria-Programacion\Grupo N°7 - Libreta Sanitaria\Grupo N°7 - Libreta Sanitaria\obj\Debug\net8.0-windows\Grupo_N_7___Libreta_Sanitaria.Modificacion.resources
-C:\Users\franc\Desktop\ICES\Programacion 1\Libreta-sanitaria-Programacion\Grupo N°7 - Libreta Sanitaria\Grupo N°7 - Libreta Sanitaria\obj\Debug\net8.0-windows\Grupo_N_7___Libreta_Sanitaria.Form2.resources
 C:\Users\franc\Desktop\ICES\Programacion 1\Libreta-sanitaria-Programacion\Grupo N°7 - Libreta Sanitaria\Grupo N°7 - Libreta Sanitaria\obj\Debug\net8.0-windows\Grupo_N_7___Libreta_Sanitaria.Ver_Perfil_Mascota.resources
 C:\Users\franc\Desktop\ICES\Programacion 1\Libreta-sanitaria-Programacion\Grupo N°7 - Libreta Sanitaria\Grupo N°7 - Libreta Sanitaria\obj\Debug\net8.0-windows\Grupo N°7 - Libreta Sanitaria.csproj.GenerateResource.cache
 C:\Users\franc\Desktop\ICES\Programacion 1\Libreta-sanitaria-Programacion\Grupo N°7 - Libreta Sanitaria\Grupo N°7 - Libreta Sanitaria\obj\Debug\net8.0-windows\Grupo N°7 - Libreta Sanitaria.GeneratedMSBuildEditorConfig.editorconfig
@@ -148,3 +147,4 @@ C:\Users\franc\Desktop\ICES\Programacion 1\Libreta-sanitaria-Programacion\Grupo 
 C:\Users\franc\Desktop\ICES\Programacion 1\Libreta-sanitaria-Programacion\Grupo N°7 - Libreta Sanitaria\Grupo N°7 - Libreta Sanitaria\obj\Debug\net8.0-windows\Grupo N°7 - Libreta Sanitaria.pdb
 C:\Users\franc\Desktop\ICES\Programacion 1\Libreta-sanitaria-Programacion\Grupo N°7 - Libreta Sanitaria\Grupo N°7 - Libreta Sanitaria\obj\Debug\net8.0-windows\Grupo N°7 - Libreta Sanitaria.genruntimeconfig.cache
 C:\Users\franc\Desktop\ICES\Programacion 1\Libreta-sanitaria-Programacion\Grupo N°7 - Libreta Sanitaria\Grupo N°7 - Libreta Sanitaria\obj\Debug\net8.0-windows\ref\Grupo N°7 - Libreta Sanitaria.dll
+C:\Users\franc\Desktop\ICES\Programacion 1\Libreta-sanitaria-Programacion\Grupo N°7 - Libreta Sanitaria\Grupo N°7 - Libreta Sanitaria\obj\Debug\net8.0-windows\Grupo_N_7___Libreta_Sanitaria.PerfilMascota.resources

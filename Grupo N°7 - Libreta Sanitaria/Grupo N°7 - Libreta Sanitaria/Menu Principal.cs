@@ -9,7 +9,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
         public Menu_Principal()
         {
             InitializeComponent();
-            
+
         }
 
 
@@ -36,28 +36,37 @@ namespace Grupo_N_7___Libreta_Sanitaria
         private void button1_Click_1(object sender, EventArgs e) // Alta Mascota
         {
             {
-                Alta_Mascota Carga_Mascota= new Alta_Mascota();
-                Carga_Mascota.Show();
-                this.Hide();
-
+                Alta_Mascota AltaMascota = new Alta_Mascota();
+                AltaMascota.ShowDialog();
             }
         }
 
         private void button2_Click(object sender, EventArgs e) // Moficar Mascota
         {
-            Modificacion altaForm = new Modificacion();
-            altaForm.Show();
-            this.Hide();
+            Modificacion Modificacion = new Modificacion();
+            Modificacion.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e) // Eliminar Mascota
         {
-
+            Borrar_Mascota BorrarMascota = new Borrar_Mascota();
+            BorrarMascota.ShowDialog();
         }
 
         private void button4_Click(object sender, EventArgs e) // agregar vacuna
         {
 
+        }
+
+        private void Menu_Principal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Ver_Perfil_Mascota VerPerfilMascota = new Ver_Perfil_Mascota();
+            VerPerfilMascota.ShowDialog();
         }
     }
 }

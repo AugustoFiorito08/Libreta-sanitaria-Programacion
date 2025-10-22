@@ -35,9 +35,10 @@
             label7 = new Label();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
+            button1 = new Button();
             comboBox1 = new ComboBox();
             comboBox2 = new ComboBox();
-            button1 = new Button();
+            button2 = new Button();
             SuspendLayout();
             // 
             // label6
@@ -109,6 +110,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(177, 27);
             textBox1.TabIndex = 20;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // textBox2
             // 
@@ -118,32 +120,7 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(177, 27);
             textBox2.TabIndex = 21;
-            // 
-            // comboBox1
-            // 
-            comboBox1.BackColor = Color.LightGray;
-            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox1.FlatStyle = FlatStyle.Popup;
-            comboBox1.Font = new Font("Rockwell", 9F);
-            comboBox1.ForeColor = SystemColors.ActiveCaptionText;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(264, 227);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(177, 25);
-            comboBox1.TabIndex = 22;
-            // 
-            // comboBox2
-            // 
-            comboBox2.BackColor = Color.LightGray;
-            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox2.FlatStyle = FlatStyle.Popup;
-            comboBox2.Font = new Font("Rockwell", 9F);
-            comboBox2.ForeColor = SystemColors.ActiveCaptionText;
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(264, 293);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(177, 25);
-            comboBox2.TabIndex = 23;
+            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // button1
             // 
@@ -159,15 +136,58 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
+            // comboBox1
+            // 
+            comboBox1.BackColor = Color.LightGray;
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox1.FlatStyle = FlatStyle.Popup;
+            comboBox1.Font = new Font("Rockwell", 9F);
+            comboBox1.ForeColor = SystemColors.ActiveCaptionText;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(264, 231);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(177, 25);
+            comboBox1.TabIndex = 25;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged_1;
+            // 
+            // comboBox2
+            // 
+            comboBox2.BackColor = Color.LightGray;
+            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBox2.FlatStyle = FlatStyle.Popup;
+            comboBox2.Font = new Font("Rockwell", 9F);
+            comboBox2.ForeColor = SystemColors.ActiveCaptionText;
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(264, 298);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(177, 25);
+            comboBox2.TabIndex = 26;
+            comboBox2.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
+            // 
+            // button2
+            // 
+            button2.BackColor = SystemColors.MenuHighlight;
+            button2.FlatStyle = FlatStyle.Popup;
+            button2.Font = new Font("Rockwell", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button2.ForeColor = SystemColors.ControlLightLight;
+            button2.Location = new Point(12, 12);
+            button2.Name = "button2";
+            button2.Size = new Size(80, 35);
+            button2.TabIndex = 27;
+            button2.Text = "Volver";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
             // Ver_Perfil_Mascota
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(682, 353);
-            Controls.Add(button1);
+            Controls.Add(button2);
             Controls.Add(comboBox2);
             Controls.Add(comboBox1);
+            Controls.Add(button1);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(label7);
@@ -178,6 +198,7 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "Ver_Perfil_Mascota";
             Text = "Ver_Perfil_Mascota";
+            Load += Ver_Perfil_Mascota_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -191,8 +212,9 @@
         private Label label7;
         private TextBox textBox1;
         private TextBox textBox2;
+        private Button button1;
         private ComboBox comboBox1;
         private ComboBox comboBox2;
-        private Button button1;
+        private Button button2;
     }
 }
