@@ -51,7 +51,7 @@
       "RelativeMoniker": "D:0:0:{E92445F6-AAFD-48AA-84F7-B1EC3A4D6620}|Grupo N\u00B07 - Libreta Sanitaria\\Grupo N\u00B07 - Libreta Sanitaria.csproj|solutionrelative:grupo n\u00B07 - libreta sanitaria\\menu principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E92445F6-AAFD-48AA-84F7-B1EC3A4D6620}|Grupo N\u00B07 - Libreta Sanitaria\\Grupo N\u00B07 - Libreta Sanitaria.csproj|c:\\users\\franc\\desktop\\ices\\programacion 1\\libreta-sanitaria-programacion\\grupo n\u00B07 - libreta sanitaria\\grupo n\u00B07 - libreta sanitaria\\perfil mascota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E92445F6-AAFD-48AA-84F7-B1EC3A4D6620}|Grupo N\u00B07 - Libreta Sanitaria\\Grupo N\u00B07 - Libreta Sanitaria.csproj|C:\\Users\\franc\\Desktop\\ICES\\Programacion 1\\Libreta-sanitaria-Programacion\\Grupo N\u00B07 - Libreta Sanitaria\\grupo n\u00B07 - libreta sanitaria\\perfil mascota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E92445F6-AAFD-48AA-84F7-B1EC3A4D6620}|Grupo N\u00B07 - Libreta Sanitaria\\Grupo N\u00B07 - Libreta Sanitaria.csproj|solutionrelative:grupo n\u00B07 - libreta sanitaria\\perfil mascota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -78,8 +78,7 @@
               "RelativeToolTip": "Biblioeta de Clases\\Repository\\HistorialMedicoRepository.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T23:05:13.051Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T23:05:13.051Z"
             },
             {
               "$type": "Document",
@@ -91,8 +90,7 @@
               "RelativeToolTip": "Biblioeta de Clases\\Repository\\MascotaRepository.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T22:27:39.939Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T22:27:39.939Z"
             },
             {
               "$type": "Document",
@@ -104,8 +102,7 @@
               "RelativeToolTip": "Biblioeta de Clases\\Models\\Mascota.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAcwCMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T22:17:35.82Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T22:17:35.82Z"
             },
             {
               "$type": "Document",
@@ -141,7 +138,7 @@
               "RelativeDocumentMoniker": "Grupo N\u00B07 - Libreta Sanitaria\\Alta Mascota.cs",
               "ToolTip": "C:\\Users\\franc\\Desktop\\ICES\\Programacion 1\\Libreta-sanitaria-Programacion\\Grupo N\u00B07 - Libreta Sanitaria\\Grupo N\u00B07 - Libreta Sanitaria\\Alta Mascota.cs",
               "RelativeToolTip": "Grupo N\u00B07 - Libreta Sanitaria\\Alta Mascota.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAYwCwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-22T22:06:51.31Z",
               "EditorCaption": ""
@@ -181,8 +178,7 @@
               "ToolTip": "C:\\Users\\franc\\Desktop\\ICES\\Programacion 1\\Libreta-sanitaria-Programacion\\Grupo N\u00B07 - Libreta Sanitaria\\Grupo N\u00B07 - Libreta Sanitaria\\Perfil Mascota.cs [Design]",
               "RelativeToolTip": "Grupo N\u00B07 - Libreta Sanitaria\\Perfil Mascota.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T17:15:17.957Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-10-22T17:15:17.957Z"
             },
             {
               "$type": "Document",
@@ -193,8 +189,7 @@
               "ToolTip": "C:\\Users\\franc\\Desktop\\ICES\\Programacion 1\\Libreta-sanitaria-Programacion\\Grupo N\u00B07 - Libreta Sanitaria\\Grupo N\u00B07 - Libreta Sanitaria\\Ver Perfil Mascota.cs [Design]",
               "RelativeToolTip": "Grupo N\u00B07 - Libreta Sanitaria\\Ver Perfil Mascota.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T01:40:01.404Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-10-22T01:40:01.404Z"
             },
             {
               "$type": "Document",
@@ -205,8 +200,7 @@
               "ToolTip": "C:\\Users\\franc\\Desktop\\ICES\\Programacion 1\\Libreta-sanitaria-Programacion\\Grupo N\u00B07 - Libreta Sanitaria\\Grupo N\u00B07 - Libreta Sanitaria\\Alta Mascota.cs [Design]",
               "RelativeToolTip": "Grupo N\u00B07 - Libreta Sanitaria\\Alta Mascota.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T00:53:21.861Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-10-15T00:53:21.861Z"
             },
             {
               "$type": "Document",
@@ -217,8 +211,7 @@
               "ToolTip": "C:\\Users\\franc\\Desktop\\ICES\\Programacion 1\\Libreta-sanitaria-Programacion\\Grupo N\u00B07 - Libreta Sanitaria\\Grupo N\u00B07 - Libreta Sanitaria\\Menu Principal.cs [Design]",
               "RelativeToolTip": "Grupo N\u00B07 - Libreta Sanitaria\\Menu Principal.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T01:35:10.779Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-10-15T01:35:10.779Z"
             },
             {
               "$type": "Document",
@@ -229,8 +222,7 @@
               "ToolTip": "C:\\Users\\franc\\Desktop\\ICES\\Programacion 1\\Libreta-sanitaria-Programacion\\Grupo N\u00B07 - Libreta Sanitaria\\Grupo N\u00B07 - Libreta Sanitaria\\Borrar Mascota.cs [Design]",
               "RelativeToolTip": "Grupo N\u00B07 - Libreta Sanitaria\\Borrar Mascota.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T19:45:25.934Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-10-21T19:45:25.934Z"
             },
             {
               "$type": "Document",
@@ -241,8 +233,7 @@
               "ToolTip": "C:\\Users\\franc\\Desktop\\ICES\\Programacion 1\\Libreta-sanitaria-Programacion\\Grupo N\u00B07 - Libreta Sanitaria\\Grupo N\u00B07 - Libreta Sanitaria\\Modificacion.cs [Design]",
               "RelativeToolTip": "Grupo N\u00B07 - Libreta Sanitaria\\Modificacion.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T19:55:27.276Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-10-15T19:55:27.276Z"
             }
           ]
         }
