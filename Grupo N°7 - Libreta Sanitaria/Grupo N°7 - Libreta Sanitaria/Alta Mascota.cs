@@ -37,8 +37,15 @@ namespace Grupo_N_7___Libreta_Sanitaria
             float peso = float.Parse(textBox2.Text);
             
             string nombreDuenio = textBox5.Text.ToLower();
+            if (nombreDuenio == MascotaRepository.verMascotas().Find(m => m.NombreDuenio == nombreDuenio)?.NombreDuenio && 
+                nombre == MascotaRepository.verMascotas().Find(m => m.NombreDuenio == nombreDuenio)?.Nombre)
+            {
+                MessageBox.Show("El dueño ya tiene una mascota registrada con este nombre");
+                return;
+            }
             Mascota mascota = new Mascota(nombre, especie, raza, peso, sexo, nombreDuenio);
             MascotaRepository.GuardarMascota(mascota);
+            MessageBox.Show("Mascota cargada con éxito");
         }
 
         private void button2_Click(object sender, EventArgs e) // No Funciona
@@ -142,7 +149,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
                 case "Perro":
                     comboBox1.Items.AddRange(new string[]
                     {
-                "Labrador", "Bulldog", "Caniche", "Pastor Alemán", "Beagle"
+                "Encontrado en la Calle","Labrador", "Bulldog", "Caniche", "Pastor Alemán", "Beagle"
                     });
                     break;
 

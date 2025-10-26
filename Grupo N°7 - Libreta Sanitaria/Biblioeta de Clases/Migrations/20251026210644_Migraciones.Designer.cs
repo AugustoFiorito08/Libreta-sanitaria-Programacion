@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Biblioeta_de_Clases.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20251022231154_Migraciones")]
+    [Migration("20251026210644_Migraciones")]
     partial class Migraciones
     {
         /// <inheritdoc />

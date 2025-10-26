@@ -21,51 +21,31 @@ namespace Grupo_N_7___Libreta_Sanitaria
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Mascota mascota = null;
-            bool borrar = false;
-
-            if (string.IsNullOrWhiteSpace(textBox1.Text) ||
-                string.IsNullOrWhiteSpace(textBox3.Text))
+            if (string.IsNullOrWhiteSpace(textBox1.Text))
             {
-                MessageBox.Show("Por favor, complete todos los campos requeridos.");
+                MessageBox.Show("Por favor, complete el campo ID requerido");
                 return;
             }
-            else if (MascotaRepository.verMascotas().Exists(m => m.Id_Mascota == int.Parse(textBox1.Text)))
+            else if(MascotaRepository.verMascotas().Exists(m => m.Id_Mascota == int.Parse(textBox1.Text)))
             {
-                mascota = MascotaRepository.verMascotas().FirstOrDefault(m => m.Id_Mascota == int.Parse(textBox1.Text));
-                if (mascota.Nombre == textBox3.Text.ToLower())
-                {
-                    checkBox1.Enabled = true;
-                    borrar = true; 
-                }
-                else if (mascota.Nombre != textBox3.Text.ToLower())
-                {
-                    MessageBox.Show("El nombre ingresado no coincide con la mascota seleccionada.");
-                    checkBox1.Enabled = false;
-                    checkBox1.Checked = false;
-                    borrar = false;
-                }
-                else if (mascota != null && (checkBox1.Checked == false))
-                {
+                var mascota = MascotaRepository.verMascotas().FirstOrDefault(m => m.Id_Mascota == int.Parse(textBox1.Text));
 
-                    if (MessageBox.Show($"¿Está seguro que desea borrar la mascota {mascota.Nombre}?",
+                if (MessageBox.Show($"¿Está seguro que desea borrar la mascota {mascota.Nombre}?",
                         "Confirmar Borrado", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                     {
-                        borrar = true;
+                        MascotaRepository.BorrarMascota(mascota);
+                        MessageBox.Show("Mascota borrada con éxito");
                     }
-                }
-                
             }
-            if (checkBox1.Checked && borrar)
+            else
             {
-                MascotaRepository.BorrarMascota(mascota);
+                MessageBox.Show("No se encontró ninguna mascota con el ID proporcionado. Verifique el campo");
             }
+
         }
 
         private void Borrar_Mascota_Load(object sender, EventArgs e)
         {
-            comboBox2.Items.AddRange(new string[] { "Perro", "Gato", "Ave", "Roedor" });
-            comboBox2.SelectedIndex = -1;
         }
 
         private void label2_Click(object sender, EventArgs e)

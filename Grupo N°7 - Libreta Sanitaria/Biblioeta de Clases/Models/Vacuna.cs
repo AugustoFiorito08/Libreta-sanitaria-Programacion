@@ -17,8 +17,9 @@ namespace Biblioeta_de_Clases.Models
         public DateTime Fecha { get; set; }
         public string Lugar { get; set; }
 
-        // Relación con Mascota
-        [ForeignKey("Mascota")] public int Id_Mascota { get; set; }
-        public Mascota Mascota { get; set; }
+        // Relación con HistorialMedico
+        [ForeignKey("HistorialMedico")] public int HistorialMedicoId { get; set; }
+        public HistorialMedico HistorialMedico { get; set; }
+
     }
 }

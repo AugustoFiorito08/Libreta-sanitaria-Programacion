@@ -62,21 +62,33 @@ namespace Grupo_N_7___Libreta_Sanitaria
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox3.Text == "")
+            int idMascota;
+            if (!int.TryParse(textBox3.Text, out idMascota))
             {
-                MessageBox.Show("Debe ingresar un ID de mascota válido");
+                MessageBox.Show("Debe ingresar un ID de mascota válido.");
                 return;
             }
-            List<Mascota> mascotas = MascotaRepository.verMascotas();
-            if (mascotas == null || !mascotas.Any(m => m.Id_Mascota == int.Parse(textBox3.Text)))
+            var mascotas = MascotaRepository.verMascotas();
+            var mascota = mascotas.FirstOrDefault(m => m.Id_Mascota == idMascota);
+            if (mascota == null)
             {
-                MessageBox.Show("No se encontró una mascota con el ID proporcionado");
+                MessageBox.Show("No se encontró una mascota con el ID proporcionado.");
                 return;
             }
-            MessageBox.Show("Modificación realizada con éxito");
-            Mascota.modificarDatosMascota(mascotas.First(m => m.Id_Mascota == int.Parse(textBox3.Text)), textBox1.Text.ToLower(),
-                int.Parse(textBox2.Text));
+            string nuevoNombre = textBox1.Text.Trim();
+            string nuevoPeso = textBox2.Text.Trim();
+            if (checkBox1.Checked && !string.IsNullOrEmpty(nuevoNombre))
+                mascota.Nombre = nuevoNombre;
+            if (checkBox2.Checked && !string.IsNullOrEmpty(nuevoPeso) && float.TryParse(nuevoPeso, out float peso))
+                mascota.Peso = peso;
+            bool modificada = MascotaRepository.ModificarDatosMascota(mascota);
+            if (modificada)
+                MessageBox.Show("Modificación realizada con éxito");
+            else
+                MessageBox.Show("No se pudo modificar la mascota");
+
         }
+       
 
         private void textBox3_TextChanged(object sender, EventArgs e) // ID Mascota
         {

@@ -31,5 +31,13 @@
         #endregion
 
         private Button button2;
+        public Label label9;
+        public Label label10;
+        public Label label11;
+        public Label label12;
+        public Label label13;
+        public Label label14;
+        public Label label15;
+        public Label label16;
     }
 }

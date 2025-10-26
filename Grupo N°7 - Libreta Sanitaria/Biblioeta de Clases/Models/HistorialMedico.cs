@@ -20,5 +20,7 @@ namespace Biblioeta_de_Clases.Models
         [ForeignKey("Mascota")] public int Id_Mascota { get; set; }
         public Mascota Mascota { get; set; }
 
+        public List<Vacuna> Vacunas { get; set; }
+
     }
 }

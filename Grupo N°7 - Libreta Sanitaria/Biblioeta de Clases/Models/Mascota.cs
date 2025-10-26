@@ -29,11 +29,6 @@ namespace Biblioeta_de_Clases.Models
             NombreDuenio = nombreDuenio;
             Historial = new List<HistorialMedico>();
         }
-        public static void modificarDatosMascota(Mascota mascota, string nombre, float peso)
-        {
-            mascota.Nombre = nombre;
-            mascota.Peso = peso;
-        }
 
     }
 }

@@ -1,5 +1,4 @@
 ﻿using Biblioeta_de_Clases;
-using Biblioeta_de_Clases.Migrations;
 using Biblioeta_de_Clases.Models;
 using Biblioeta_de_Clases.Repository;
 using System;
@@ -36,7 +35,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
         {
 
             string nombreDueno = textBox1.Text.ToLower().Trim();
-            string nombreMascota = textBox1.Text.ToLower().Trim();
+            string nombreMascota = textBox2.Text.ToLower().Trim();
             string especie = comboBox1.Text.Trim();
             string raza = comboBox2.Text.Trim();
 
@@ -87,7 +86,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
                 case "Perro":
                     comboBox2.Items.AddRange(new string[]
                     {
-                "Labrador", "Bulldog", "Caniche", "Pastor Alemán", "Beagle"
+                "Encontrado en la Calle","Labrador", "Bulldog", "Caniche", "Pastor Alemán", "Beagle"
                     });
                     break;
 
