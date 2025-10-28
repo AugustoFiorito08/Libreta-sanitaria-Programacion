@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Biblioeta_de_Clases;
 using Biblioeta_de_Clases.Models;
 using Biblioeta_de_Clases.Data;
+using Biblioeta_de_Clases.Repository;
 
 namespace Grupo_N_7___Libreta_Sanitaria
 {
@@ -28,10 +29,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
             label3.Text = mascota.Raza;
             label4.Text = mascota.NombreDuenio;
             label14.Text = mascota.Peso.ToString();
-            foreach (var historial in mascota.Historial)
-            {
-                listBox1.Items.Add($"Fecha: {historial.Fecha.ToShortDateString()}, Descripción: {historial.Descripcion}");
-            }
+
         }
         private void InitializeComponent()
         {
@@ -53,7 +51,9 @@ namespace Grupo_N_7___Libreta_Sanitaria
             label13 = new Label();
             label14 = new Label();
             label15 = new Label();
-            this.label16 = new Label();
+            label16 = new Label();
+            dataGridView1 = new DataGridView();
+            ((ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // label6
@@ -164,6 +164,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
             button1.TabIndex = 27;
             button1.Text = "Agregar Vacuna";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // label8
             // 
@@ -274,21 +275,33 @@ namespace Grupo_N_7___Libreta_Sanitaria
             // 
             // label16
             // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = SystemColors.ActiveCaption;
-            this.label16.Font = new Font("Rockwell", 10.2F, FontStyle.Bold);
-            this.label16.ForeColor = SystemColors.ControlLightLight;
-            this.label16.Location = new Point(107, 238);
-            this.label16.Name = "label16";
-            this.label16.Size = new Size(33, 20);
-            this.label16.TabIndex = 37;
-            this.label16.Text = "Kg";
+            label16.AutoSize = true;
+            label16.BackColor = SystemColors.ActiveCaption;
+            label16.Font = new Font("Rockwell", 10.2F, FontStyle.Bold);
+            label16.ForeColor = SystemColors.ControlLightLight;
+            label16.Location = new Point(107, 238);
+            label16.Name = "label16";
+            label16.Size = new Size(33, 20);
+            label16.TabIndex = 37;
+            label16.Text = "Kg";
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(291, 161);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(343, 97);
+            dataGridView1.TabIndex = 38;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // PerfilMascota
             // 
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(682, 353);
-            Controls.Add(this.label16);
+            Controls.Add(dataGridView1);
+            Controls.Add(label16);
             Controls.Add(label15);
             Controls.Add(label14);
             Controls.Add(label13);
@@ -309,6 +322,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
             Controls.Add(label6);
             Name = "PerfilMascota";
             Load += Form2_Load;
+            ((ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
 
@@ -329,7 +343,20 @@ namespace Grupo_N_7___Libreta_Sanitaria
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            listBox1.Items.Clear();
+            var mascotaId = int.Parse(label7.Text);
+            var mascota = MascotaRepository.BuscarMascotaPorId(mascotaId);
+            if (mascota.HistorialMedico != null)
+            {
+                foreach (var vacuna in mascota.HistorialMedico.Vacunas)
+                {
+                    listBox1.Items.Add($"Vacuna: {vacuna.Nombre} - Fecha: {vacuna.Fecha.ToShortDateString()} - Dosis: {vacuna.Dosis}");
+                }
+            }
+            else
+            {
+                listBox1.Items.Add("No hay historial médico registrado.");
+            }
         }
         private Button button1;
 
@@ -360,6 +387,39 @@ namespace Grupo_N_7___Libreta_Sanitaria
         private void label14_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var mascotaId = int.Parse(label7.Text);
+            var mascota = MascotaRepository.BuscarMascotaPorId(mascotaId);
+            var historial = mascota.HistorialMedico;
+
+            if (historial != null && historial.Vacunas.Any())
+            {
+                dataGridView1.DataSource = historial.Vacunas
+                    .Select(v => new
+                    {
+                        v.Nombre,
+                        v.Dosis,
+                        v.Tipo,
+                        v.Fecha,
+                    })
+                    .ToList();
+            }
+            else
+            {
+                dataGridView1.DataSource = null;
+                MessageBox.Show("Esta mascota no tiene vacunas registradas aún.");
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var mascotaId = int.Parse(label7.Text);
+            var mascota = MascotaRepository.BuscarMascotaPorId(mascotaId);
+            Agregar_Vacuna vacuna = new Agregar_Vacuna(mascota);
+            vacuna.ShowDialog();
         }
     }
 }

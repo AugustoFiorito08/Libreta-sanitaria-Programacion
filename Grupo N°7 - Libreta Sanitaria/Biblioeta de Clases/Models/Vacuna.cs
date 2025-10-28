@@ -15,10 +15,10 @@ namespace Biblioeta_de_Clases.Models
         public string Dosis { get; set; }
         public string Tipo { get; set; }
         public DateTime Fecha { get; set; }
-        public string Lugar { get; set; }
+          
 
         // Relación con HistorialMedico
-        [ForeignKey("HistorialMedico")] public int HistorialMedicoId { get; set; }
+        [ForeignKey("HistorialMedico")] public int HistorialId { get; set; }
         public HistorialMedico HistorialMedico { get; set; }
 
     }

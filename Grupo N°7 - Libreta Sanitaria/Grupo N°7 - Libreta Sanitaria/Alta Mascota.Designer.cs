@@ -188,7 +188,7 @@
             // 
             textBox5.BackColor = Color.Gainsboro;
             textBox5.BorderStyle = BorderStyle.FixedSingle;
-            textBox5.Font = new Font("Rockwell", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox5.Font = new Font("Rockwell", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBox5.Location = new Point(192, 275);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(177, 25);

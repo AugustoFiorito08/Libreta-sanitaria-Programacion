@@ -7,7 +7,6 @@ using Biblioeta_de_Clases.Models;
 using Microsoft.EntityFrameworkCore;
 using Biblioeta_de_Clases.Repository;
 
-
 namespace Biblioeta_de_Clases.Data
 {
     public class ApplicationDbContext : DbContext
@@ -31,10 +30,18 @@ namespace Biblioeta_de_Clases.Data
             modelBuilder.Entity<Vacuna>().HasKey(v => v.Id_Vacuna);
             modelBuilder.Entity<Mascota>().HasKey(m => m.Id_Mascota);
 
+            modelBuilder.Entity<HistorialMedico>().HasKey(h => h.Id_HistorialMedico);
+            modelBuilder.Entity<Vacuna>().HasKey(v => v.Id_Vacuna);
+            modelBuilder.Entity<Mascota>().HasKey(m => m.Id_Mascota);
+            modelBuilder.Entity<Mascota>()
+            .HasOne(m => m.HistorialMedico)
+            .WithOne(h => h.Mascota)
+            .HasForeignKey<HistorialMedico>(h => h.Id_Mascota)
+            .OnDelete(DeleteBehavior.Cascade);
             modelBuilder.Entity<HistorialMedico>()
-            .HasOne(h => h.Mascota)
-            .WithMany(m => m.Historial)
-            .HasForeignKey(h => h.Id_Mascota)
+            .HasMany(h => h.Vacunas)
+            .WithOne(v => v.HistorialMedico)
+            .HasForeignKey(v => v.HistorialId)
             .OnDelete(DeleteBehavior.Cascade);
         }
 

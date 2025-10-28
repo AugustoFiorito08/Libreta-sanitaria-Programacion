@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Biblioeta_de_Clases.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20251026214208_Actualizacion")]
-    partial class Actualizacion
+    [Migration("20251028020014_Migracion")]
+    partial class Migracion
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -33,23 +33,13 @@ namespace Biblioeta_de_Clases.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id_HistorialMedico"));
 
-                    b.Property<string>("Descripcion")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("Fecha")
-                        .HasColumnType("datetime2");
-
                     b.Property<int>("Id_Mascota")
                         .HasColumnType("int");
 
-                    b.Property<string>("Observaciones")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("Id_HistorialMedico");
 
-                    b.HasIndex("Id_Mascota");
+                    b.HasIndex("Id_Mascota")
+                        .IsUnique();
 
                     b.ToTable("HistorialesMedicos");
                 });
@@ -105,12 +95,8 @@ namespace Biblioeta_de_Clases.Migrations
                     b.Property<DateTime>("Fecha")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("Id_Mascota")
+                    b.Property<int>("HistorialId")
                         .HasColumnType("int");
-
-                    b.Property<string>("Lugar")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
@@ -122,7 +108,7 @@ namespace Biblioeta_de_Clases.Migrations
 
                     b.HasKey("Id_Vacuna");
 
-                    b.HasIndex("Id_Mascota");
+                    b.HasIndex("HistorialId");
 
                     b.ToTable("Vacunas");
                 });
@@ -130,8 +116,8 @@ namespace Biblioeta_de_Clases.Migrations
             modelBuilder.Entity("Biblioeta_de_Clases.Models.HistorialMedico", b =>
                 {
                     b.HasOne("Biblioeta_de_Clases.Models.Mascota", "Mascota")
-                        .WithMany("Historial")
-                        .HasForeignKey("Id_Mascota")
+                        .WithOne("HistorialMedico")
+                        .HasForeignKey("Biblioeta_de_Clases.Models.HistorialMedico", "Id_Mascota")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -140,18 +126,24 @@ namespace Biblioeta_de_Clases.Migrations
 
             modelBuilder.Entity("Biblioeta_de_Clases.Models.Vacuna", b =>
                 {
-                    b.HasOne("Biblioeta_de_Clases.Models.Mascota", "Mascota")
-                        .WithMany()
-                        .HasForeignKey("Id_Mascota")
+                    b.HasOne("Biblioeta_de_Clases.Models.HistorialMedico", "HistorialMedico")
+                        .WithMany("Vacunas")
+                        .HasForeignKey("HistorialId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Mascota");
+                    b.Navigation("HistorialMedico");
+                });
+
+            modelBuilder.Entity("Biblioeta_de_Clases.Models.HistorialMedico", b =>
+                {
+                    b.Navigation("Vacunas");
                 });
 
             modelBuilder.Entity("Biblioeta_de_Clases.Models.Mascota", b =>
                 {
-                    b.Navigation("Historial");
+                    b.Navigation("HistorialMedico")
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

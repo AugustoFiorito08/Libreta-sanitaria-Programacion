@@ -61,39 +61,39 @@ namespace Biblioeta_de_Clases.Migrations
                     Dosis = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Tipo = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Fecha = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Lugar = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Id_Mascota = table.Column<int>(type: "int", nullable: false)
+                    HistorialId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Vacunas", x => x.Id_Vacuna);
                     table.ForeignKey(
-                        name: "FK_Vacunas_Mascotas_Id_Mascota",
-                        column: x => x.Id_Mascota,
-                        principalTable: "Mascotas",
-                        principalColumn: "Id_Mascota",
+                        name: "FK_Vacunas_HistorialesMedicos_HistorialId",
+                        column: x => x.HistorialId,
+                        principalTable: "HistorialesMedicos",
+                        principalColumn: "Id_HistorialMedico",
                         onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_HistorialesMedicos_Id_Mascota",
                 table: "HistorialesMedicos",
-                column: "Id_Mascota");
+                column: "Id_Mascota",
+                unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_Vacunas_Id_Mascota",
+                name: "IX_Vacunas_HistorialId",
                 table: "Vacunas",
-                column: "Id_Mascota");
+                column: "HistorialId");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "HistorialesMedicos");
+                name: "Vacunas");
 
             migrationBuilder.DropTable(
-                name: "Vacunas");
+                name: "HistorialesMedicos");
 
             migrationBuilder.DropTable(
                 name: "Mascotas");

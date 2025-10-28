@@ -39,5 +39,6 @@
         public Label label14;
         public Label label15;
         public Label label16;
+        private DataGridView dataGridView1;
     }
 }

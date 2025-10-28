@@ -24,6 +24,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
             if (checkBox1.Checked)
             {
                 sexo = "Macho";
+                
                 checkBox2.Enabled = false;
             }
             else if (checkBox2.Checked)

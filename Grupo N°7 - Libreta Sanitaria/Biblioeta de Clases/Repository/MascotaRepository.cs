@@ -36,12 +36,10 @@ namespace Biblioeta_de_Clases.Repository
             using (var context = new ApplicationDbContext())
             {
                 var mascotaExistente = context.Mascotas.FirstOrDefault(m => m.Id_Mascota == mascota.Id_Mascota);
-
                 if (mascotaExistente != null)
                 {
                     mascotaExistente.Nombre = mascota.Nombre;
                     mascotaExistente.Peso = mascota.Peso;
-
                     context.SaveChanges();
                     return true;
                 }
@@ -59,6 +57,15 @@ namespace Biblioeta_de_Clases.Repository
                         m.Nombre.ToLower() == nombreMascota.ToLower() &&
                         m.Especie.ToLower() == especie.ToLower() &&
                         m.Raza.ToLower() == raza.ToLower());
+                return mascotaEncontrada;
+            }
+        }
+        public static Mascota BuscarMascotaPorId(int idMascota)
+        {
+            using (var context = new ApplicationDbContext())
+            {
+                Mascota mascotaEncontrada = context.Mascotas
+                    .FirstOrDefault(m => m.Id_Mascota == idMascota);
                 return mascotaEncontrada;
             }
         }

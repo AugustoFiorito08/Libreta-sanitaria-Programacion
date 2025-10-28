@@ -18,7 +18,11 @@ namespace Biblioeta_de_Clases.Models
         public string Sexo { get; set; }
         public float Peso { get; set; }        
         public string NombreDuenio { get; set; }
-        public List<HistorialMedico> Historial { get; set; }
+        
+
+        //Relacion
+        public HistorialMedico HistorialMedico { get; set; } = new HistorialMedico();
+
         public Mascota( string nombre, string especie, string raza, float peso, string sexo, string nombreDuenio )
         {   
             Nombre = nombre;
@@ -27,7 +31,7 @@ namespace Biblioeta_de_Clases.Models
             Sexo = sexo;
             Peso = peso;
             NombreDuenio = nombreDuenio;
-            Historial = new List<HistorialMedico>();
+           
         }
 
     }
