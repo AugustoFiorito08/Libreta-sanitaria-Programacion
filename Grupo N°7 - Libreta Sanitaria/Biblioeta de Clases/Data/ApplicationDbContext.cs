@@ -12,7 +12,6 @@ namespace Biblioeta_de_Clases.Data
     public class ApplicationDbContext : DbContext
     {
         public DbSet<Mascota> Mascotas { get; set; }
-        public DbSet<HistorialMedico> HistorialesMedicos { get; set; }
         public DbSet<Vacuna> Vacunas { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -24,27 +23,16 @@ namespace Biblioeta_de_Clases.Data
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
-
-            modelBuilder.Entity<HistorialMedico>().HasKey(h => h.Id_HistorialMedico);
-            modelBuilder.Entity<Vacuna>().HasKey(v => v.Id_Vacuna);
-            modelBuilder.Entity<Mascota>().HasKey(m => m.Id_Mascota);
-
-            modelBuilder.Entity<HistorialMedico>().HasKey(h => h.Id_HistorialMedico);
-            modelBuilder.Entity<Vacuna>().HasKey(v => v.Id_Vacuna);
-            modelBuilder.Entity<Mascota>().HasKey(m => m.Id_Mascota);
             modelBuilder.Entity<Mascota>()
-            .HasOne(m => m.HistorialMedico)
-            .WithOne(h => h.Mascota)
-            .HasForeignKey<HistorialMedico>(h => h.Id_Mascota)
-            .OnDelete(DeleteBehavior.Cascade);
-            modelBuilder.Entity<HistorialMedico>()
-            .HasMany(h => h.Vacunas)
-            .WithOne(v => v.HistorialMedico)
-            .HasForeignKey(v => v.HistorialId)
-            .OnDelete(DeleteBehavior.Cascade);
+                .HasKey(m => m.Id);
+            modelBuilder.Entity<Vacuna>()
+                .HasKey(v => v.Id);
+            modelBuilder.Entity<Mascota>()
+                .HasMany(m => m.Vacunas)
+                .WithOne(v => v.Mascota)
+                .HasForeignKey(v => v.MascotaId);
         }
 
 
-    }    
+    }
 }

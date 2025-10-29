@@ -16,10 +16,12 @@ namespace Grupo_N_7___Libreta_Sanitaria
 {
     public partial class Ver_Perfil_Mascota : Form
     {
-        public Ver_Perfil_Mascota()
+        public Ver_Perfil_Mascota(Menu_Principal menu)
         {
             InitializeComponent();
+            menuPrincipal = menu;
         }
+        public Form menuPrincipal;
 
         private void label6_Click(object sender, EventArgs e)
         {
@@ -142,6 +144,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+            menuPrincipal.Show();
         }
     }
 }

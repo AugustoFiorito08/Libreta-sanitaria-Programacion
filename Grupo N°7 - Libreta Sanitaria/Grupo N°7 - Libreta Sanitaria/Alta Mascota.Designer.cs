@@ -255,7 +255,7 @@
             button2.Name = "button2";
             button2.Size = new Size(80, 35);
             button2.TabIndex = 28;
-            button2.Text = "Volver";
+            button2.Text = " ";
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click_1;
             // 

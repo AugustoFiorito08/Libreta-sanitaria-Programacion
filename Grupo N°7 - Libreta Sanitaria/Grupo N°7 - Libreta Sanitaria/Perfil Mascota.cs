@@ -11,24 +11,29 @@ using Biblioeta_de_Clases;
 using Biblioeta_de_Clases.Models;
 using Biblioeta_de_Clases.Data;
 using Biblioeta_de_Clases.Repository;
-
 namespace Grupo_N_7___Libreta_Sanitaria
 {
     public partial class PerfilMascota : Form
     {
-        public PerfilMascota()
+        private BindingList<Vacuna> vacunas;
+        public PerfilMascota(Ver_Perfil_Mascota menu)
         {
             InitializeComponent();
+            ver_Perfil_Mascota  = menu;
         }
+        private Form ver_Perfil_Mascota;
         public PerfilMascota(Mascota mascota)
         {
             InitializeComponent();
-            label7.Text = mascota.Id_Mascota.ToString();
+            label7.Text = mascota.Id.ToString();
             label8.Text = mascota.Nombre;
             label2.Text = mascota.Especie;
             label3.Text = mascota.Raza;
             label4.Text = mascota.NombreDuenio;
             label14.Text = mascota.Peso.ToString();
+            vacunas = new BindingList<Vacuna>(); 
+            dataGridView1.DataSource = vacunas;
+
 
         }
         private void InitializeComponent()
@@ -40,7 +45,6 @@ namespace Grupo_N_7___Libreta_Sanitaria
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
-            listBox1 = new ListBox();
             button1 = new Button();
             label8 = new Label();
             button2 = new Button();
@@ -53,6 +57,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
             label15 = new Label();
             label16 = new Label();
             dataGridView1 = new DataGridView();
+            button3 = new Button();
             ((ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -73,7 +78,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label7.ForeColor = SystemColors.ControlLightLight;
-            label7.Location = new Point(41, 125);
+            label7.Location = new Point(42, 161);
             label7.Name = "label7";
             label7.Size = new Size(28, 23);
             label7.TabIndex = 20;
@@ -86,7 +91,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
             label1.BackColor = SystemColors.ActiveCaption;
             label1.Font = new Font("Rockwell", 10.2F, FontStyle.Bold);
             label1.ForeColor = SystemColors.ControlLightLight;
-            label1.Location = new Point(12, 147);
+            label1.Location = new Point(14, 233);
             label1.Name = "label1";
             label1.Size = new Size(0, 20);
             label1.TabIndex = 21;
@@ -97,7 +102,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
             label2.BackColor = SystemColors.ActiveCaption;
             label2.Font = new Font("Rockwell", 10.2F, FontStyle.Bold);
             label2.ForeColor = SystemColors.ControlLightLight;
-            label2.Location = new Point(92, 163);
+            label2.Location = new Point(84, 195);
             label2.Name = "label2";
             label2.Size = new Size(76, 20);
             label2.TabIndex = 22;
@@ -110,7 +115,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
             label3.BackColor = SystemColors.ActiveCaption;
             label3.Font = new Font("Rockwell", 10.2F, FontStyle.Bold);
             label3.ForeColor = SystemColors.ControlLightLight;
-            label3.Location = new Point(65, 202);
+            label3.Location = new Point(63, 225);
             label3.Name = "label3";
             label3.Size = new Size(50, 20);
             label3.TabIndex = 23;
@@ -121,7 +126,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = SystemColors.ControlLightLight;
-            label4.Location = new Point(174, 318);
+            label4.Location = new Point(172, 321);
             label4.Name = "label4";
             label4.Size = new Size(166, 23);
             label4.TabIndex = 24;
@@ -132,25 +137,12 @@ namespace Grupo_N_7___Libreta_Sanitaria
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = SystemColors.ControlLightLight;
-            label5.Location = new Point(397, 72);
+            label5.Location = new Point(375, 58);
             label5.Name = "label5";
             label5.Size = new Size(142, 23);
             label5.TabIndex = 25;
             label5.Text = "Historial Medico";
             label5.Click += label5_Click;
-            // 
-            // listBox1
-            // 
-            listBox1.BackColor = SystemColors.InactiveCaption;
-            listBox1.BorderStyle = BorderStyle.None;
-            listBox1.Font = new Font("Rockwell", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            listBox1.ForeColor = SystemColors.MenuText;
-            listBox1.FormattingEnabled = true;
-            listBox1.Location = new Point(276, 98);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(394, 160);
-            listBox1.TabIndex = 26;
-            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
             // button1
             // 
@@ -158,7 +150,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
             button1.FlatStyle = FlatStyle.Popup;
             button1.Font = new Font("Rockwell", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button1.ForeColor = SystemColors.HighlightText;
-            button1.Location = new Point(413, 271);
+            button1.Location = new Point(367, 274);
             button1.Name = "button1";
             button1.Size = new Size(150, 70);
             button1.TabIndex = 27;
@@ -171,7 +163,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label8.ForeColor = SystemColors.ControlLightLight;
-            label8.Location = new Point(203, 271);
+            label8.Location = new Point(204, 286);
             label8.Name = "label8";
             label8.Size = new Size(76, 23);
             label8.TabIndex = 28;
@@ -196,7 +188,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label9.ForeColor = SystemColors.ControlLightLight;
-            label9.Location = new Point(13, 125);
+            label9.Location = new Point(14, 161);
             label9.Name = "label9";
             label9.Size = new Size(33, 23);
             label9.TabIndex = 30;
@@ -207,7 +199,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label10.ForeColor = SystemColors.ControlLightLight;
-            label10.Location = new Point(12, 271);
+            label10.Location = new Point(12, 286);
             label10.Name = "label10";
             label10.Size = new Size(196, 23);
             label10.TabIndex = 31;
@@ -219,7 +211,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
             label11.BackColor = SystemColors.ActiveCaption;
             label11.Font = new Font("Rockwell", 10.2F, FontStyle.Bold);
             label11.ForeColor = SystemColors.ControlLightLight;
-            label11.Location = new Point(14, 163);
+            label11.Location = new Point(11, 195);
             label11.Name = "label11";
             label11.Size = new Size(82, 20);
             label11.TabIndex = 32;
@@ -231,7 +223,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
             label12.BackColor = SystemColors.ActiveCaption;
             label12.Font = new Font("Rockwell", 10.2F, FontStyle.Bold);
             label12.ForeColor = SystemColors.ControlLightLight;
-            label12.Location = new Point(13, 202);
+            label12.Location = new Point(12, 225);
             label12.Name = "label12";
             label12.Size = new Size(56, 20);
             label12.TabIndex = 33;
@@ -242,7 +234,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
             label13.AutoSize = true;
             label13.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label13.ForeColor = SystemColors.ControlLightLight;
-            label13.Location = new Point(12, 318);
+            label13.Location = new Point(12, 321);
             label13.Name = "label13";
             label13.Size = new Size(166, 23);
             label13.TabIndex = 34;
@@ -254,7 +246,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
             label14.BackColor = SystemColors.ActiveCaption;
             label14.Font = new Font("Rockwell", 10.2F, FontStyle.Bold);
             label14.ForeColor = SystemColors.ControlLightLight;
-            label14.Location = new Point(65, 238);
+            label14.Location = new Point(63, 261);
             label14.Name = "label14";
             label14.Size = new Size(49, 20);
             label14.TabIndex = 35;
@@ -267,7 +259,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
             label15.BackColor = SystemColors.ActiveCaption;
             label15.Font = new Font("Rockwell", 10.2F, FontStyle.Bold);
             label15.ForeColor = SystemColors.ControlLightLight;
-            label15.Location = new Point(13, 238);
+            label15.Location = new Point(12, 261);
             label15.Name = "label15";
             label15.Size = new Size(55, 20);
             label15.TabIndex = 36;
@@ -279,7 +271,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
             label16.BackColor = SystemColors.ActiveCaption;
             label16.Font = new Font("Rockwell", 10.2F, FontStyle.Bold);
             label16.ForeColor = SystemColors.ControlLightLight;
-            label16.Location = new Point(107, 238);
+            label16.Location = new Point(105, 261);
             label16.Name = "label16";
             label16.Size = new Size(33, 20);
             label16.TabIndex = 37;
@@ -288,18 +280,33 @@ namespace Grupo_N_7___Libreta_Sanitaria
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(291, 161);
+            dataGridView1.Location = new Point(172, 84);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(343, 97);
+            dataGridView1.Size = new Size(503, 175);
             dataGridView1.TabIndex = 38;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            // 
+            // button3
+            // 
+            button3.BackColor = SystemColors.MenuHighlight;
+            button3.FlatStyle = FlatStyle.Popup;
+            button3.Font = new Font("Rockwell", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button3.ForeColor = SystemColors.ControlLightLight;
+            button3.Location = new Point(580, 261);
+            button3.Name = "button3";
+            button3.Size = new Size(95, 35);
+            button3.TabIndex = 39;
+            button3.Text = "Actualizar";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click_1;
             // 
             // PerfilMascota
             // 
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(682, 353);
+            ClientSize = new Size(687, 356);
+            Controls.Add(button3);
             Controls.Add(dataGridView1);
             Controls.Add(label16);
             Controls.Add(label15);
@@ -312,7 +319,6 @@ namespace Grupo_N_7___Libreta_Sanitaria
             Controls.Add(button2);
             Controls.Add(label8);
             Controls.Add(button1);
-            Controls.Add(listBox1);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -320,6 +326,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
             Controls.Add(label1);
             Controls.Add(label7);
             Controls.Add(label6);
+            ForeColor = Color.Black;
             Name = "PerfilMascota";
             Load += Form2_Load;
             ((ISupportInitialize)dataGridView1).EndInit();
@@ -339,24 +346,33 @@ namespace Grupo_N_7___Libreta_Sanitaria
         public Label label3;
         public Label label4;
         public Label label5;
-        private ListBox listBox1;
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            listBox1.Items.Clear();
             var mascotaId = int.Parse(label7.Text);
             var mascota = MascotaRepository.BuscarMascotaPorId(mascotaId);
-            if (mascota.HistorialMedico != null)
-            {
-                foreach (var vacuna in mascota.HistorialMedico.Vacunas)
-                {
-                    listBox1.Items.Add($"Vacuna: {vacuna.Nombre} - Fecha: {vacuna.Fecha.ToShortDateString()} - Dosis: {vacuna.Dosis}");
-                }
-            }
-            else
-            {
-                listBox1.Items.Add("No hay historial médico registrado.");
-            }
+            var vacunas = VacunaRepository.BuscarVacunaPorMascota(mascota);
+            dataGridView1.DataSource = vacunas;
+
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView1.MultiSelect = false;
+            dataGridView1.ReadOnly = true;
+            dataGridView1.AllowUserToAddRows = false;
+
+            dataGridView1.Columns.Clear();
+
+            dataGridView1.Columns.Add("Nombre", "Nombre");
+            dataGridView1.Columns["Nombre"].DataPropertyName = "Nombre";
+
+            dataGridView1.Columns.Add("Tipo", "Tipo");
+            dataGridView1.Columns["Tipo"].DataPropertyName = "Tipo";
+
+            dataGridView1.Columns.Add("FechaAplicacion", "Fecha de Aplicación");
+            dataGridView1.Columns["FechaAplicacion"].DataPropertyName = "FechaAplicacion";
+
+
+
         }
         private Button button1;
 
@@ -367,16 +383,14 @@ namespace Grupo_N_7___Libreta_Sanitaria
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (label1.Text == "Nombre de la mascota")
-            {
 
-            }
         }
         public Label label8;
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+            ver_Perfil_Mascota.Show();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -391,27 +405,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            var mascotaId = int.Parse(label7.Text);
-            var mascota = MascotaRepository.BuscarMascotaPorId(mascotaId);
-            var historial = mascota.HistorialMedico;
 
-            if (historial != null && historial.Vacunas.Any())
-            {
-                dataGridView1.DataSource = historial.Vacunas
-                    .Select(v => new
-                    {
-                        v.Nombre,
-                        v.Dosis,
-                        v.Tipo,
-                        v.Fecha,
-                    })
-                    .ToList();
-            }
-            else
-            {
-                dataGridView1.DataSource = null;
-                MessageBox.Show("Esta mascota no tiene vacunas registradas aún.");
-            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -420,6 +414,19 @@ namespace Grupo_N_7___Libreta_Sanitaria
             var mascota = MascotaRepository.BuscarMascotaPorId(mascotaId);
             Agregar_Vacuna vacuna = new Agregar_Vacuna(mascota);
             vacuna.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+           var mascotaId = int.Parse(label7.Text);
+            var mascota = MascotaRepository.BuscarMascotaPorId(mascotaId);
+            var vacunas = VacunaRepository.BuscarVacunaPorMascota(mascota);
+            dataGridView1.DataSource = vacunas;
         }
     }
 }

@@ -10,16 +10,14 @@ namespace Biblioeta_de_Clases.Models
 {
     public class Vacuna
     {
-        [Key] public int Id_Vacuna { get; set; }
+        [Key] public int Id { get; set; }
         public string Nombre { get; set; }
         public string Dosis { get; set; }
         public string Tipo { get; set; }
         public DateTime Fecha { get; set; }
-          
 
-        // Relación con HistorialMedico
-        [ForeignKey("HistorialMedico")] public int HistorialId { get; set; }
-        public HistorialMedico HistorialMedico { get; set; }
-
+        [ForeignKey("Mascota")]
+        public int MascotaId { get; set; }
+        public Mascota Mascota { get; set; }
     }
 }

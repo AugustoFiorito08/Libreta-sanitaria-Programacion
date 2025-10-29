@@ -22,7 +22,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
         public Agregar_Vacuna(Mascota mascota)
         {
             InitializeComponent();
-            label5.Text = mascota.Id_Mascota.ToString();   
+            label5.Text = mascota.Id.ToString();
 
         }
 
@@ -48,29 +48,21 @@ namespace Grupo_N_7___Libreta_Sanitaria
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(textBox1.Text) && !string.IsNullOrWhiteSpace(textBox2.Text) && !string.IsNullOrWhiteSpace(textBox3.Text))
+            var mascota = MascotaRepository.verMascotas()
+                .FirstOrDefault(m => m.Id == int.Parse(label5.Text));
+
+
+            var vacuna = new Vacuna
             {
-                if (dateTimePicker1.Value > DateTime.Now)
-                {
-                    dateTimePicker1.Value = DateTime.Now;
-                    return;
-                }
+                Nombre = textBox1.Text.Trim(),
+                Tipo = textBox2.Text.Trim(),
+                Dosis = textBox3.Text.Trim(),
+                Fecha = dateTimePicker1.Value,
+            };
 
-                Vacuna vacuna = new Vacuna
-                {
-                    Nombre = textBox1.Text.Trim(),
-                    Tipo = textBox2.Text.Trim(),
-                    Dosis = textBox3.Text.Trim(),
-                    Fecha = dateTimePicker1.Value
-
-                };
-                VacunaRepository.GuardarVacuna(vacuna);
-                var mascota = MascotaRepository.verMascotas().FirstOrDefault(m => m.Id_Mascota == int.Parse(label5.Text));
-                mascota.HistorialMedico.Vacunas.Add(vacuna);
-                MessageBox.Show("Vacuna agregada con éxito");
-                return;
-            }
+            VacunaRepository.GuardarVacuna(vacuna, mascota);
         }
+
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e) // Fecha
         {
@@ -80,6 +72,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+            VacunaRepository.Actualizar();
         }
 
         private void label5_Click(object sender, EventArgs e)

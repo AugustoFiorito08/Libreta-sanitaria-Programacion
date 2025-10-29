@@ -18,7 +18,12 @@ namespace Grupo_N_7___Libreta_Sanitaria
         {
             InitializeComponent();
         }
-
+        private Form menuPrincipal;
+        public Borrar_Mascota(Form menu)
+        {
+            InitializeComponent();
+            menuPrincipal = menu;
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(textBox1.Text))
@@ -26,9 +31,9 @@ namespace Grupo_N_7___Libreta_Sanitaria
                 MessageBox.Show("Por favor, complete el campo ID requerido");
                 return;
             }
-            else if(MascotaRepository.verMascotas().Exists(m => m.Id_Mascota == int.Parse(textBox1.Text)))
+            else if(MascotaRepository.verMascotas().Exists(m => m.Id == int.Parse(textBox1.Text)))
             {
-                var mascota = MascotaRepository.verMascotas().FirstOrDefault(m => m.Id_Mascota == int.Parse(textBox1.Text));
+                var mascota = MascotaRepository.verMascotas().FirstOrDefault(m => m.Id == int.Parse(textBox1.Text));
 
                 if (MessageBox.Show($"¿Está seguro que desea borrar la mascota {mascota.Nombre}?",
                         "Confirmar Borrado", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
@@ -91,6 +96,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+            menuPrincipal.Show();
         }
     }
 }

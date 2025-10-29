@@ -15,10 +15,12 @@ namespace Grupo_N_7___Libreta_Sanitaria
 {
     public partial class Modificacion : Form
     {
-        public Modificacion()
+        public Modificacion(Menu_Principal menu)
         {
             InitializeComponent();
+            menuPrincipal = menu; 
         }
+        public Form menuPrincipal;
 
         private void textBox1_TextChanged(object sender, EventArgs e) // Nombre texto
         {
@@ -69,7 +71,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
                 return;
             }
             var mascotas = MascotaRepository.verMascotas();
-            var mascota = mascotas.FirstOrDefault(m => m.Id_Mascota == idMascota);
+            var mascota = mascotas.FirstOrDefault(m => m.Id == idMascota);
             if (mascota == null)
             {
                 MessageBox.Show("No se encontró una mascota con el ID proporcionado.");
@@ -107,6 +109,7 @@ namespace Grupo_N_7___Libreta_Sanitaria
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+            menuPrincipal.Show();
         }
 
         private void Modificacion_Load(object sender, EventArgs e)

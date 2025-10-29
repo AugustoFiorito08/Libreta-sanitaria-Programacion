@@ -6,10 +6,12 @@ namespace Grupo_N_7___Libreta_Sanitaria
 {
     public partial class Alta_Mascota : Form
     {
-        public Alta_Mascota()
+        public Alta_Mascota(Menu_Principal menu)
         {
             InitializeComponent();
+            menuPrincipal = menu;
         }
+        public Form menuPrincipal;
 
         private void button1_Click(object sender, EventArgs e) // Alta
         {
@@ -44,7 +46,15 @@ namespace Grupo_N_7___Libreta_Sanitaria
                 MessageBox.Show("El dueño ya tiene una mascota registrada con este nombre");
                 return;
             }
-            Mascota mascota = new Mascota(nombre, especie, raza, peso, sexo, nombreDuenio);
+            Mascota mascota = new Mascota
+            {
+                Nombre = nombre,
+                Especie = especie,
+                Raza = raza,
+                Sexo = sexo,
+                Peso = peso,
+                NombreDuenio = nombreDuenio
+            };
             MascotaRepository.GuardarMascota(mascota);
             MessageBox.Show("Mascota cargada con éxito");
         }
@@ -190,6 +200,8 @@ namespace Grupo_N_7___Libreta_Sanitaria
         private void button2_Click_1(object sender, EventArgs e)
         {
             this.Close();
+            menuPrincipal.Show();
+
         }
     }
 }

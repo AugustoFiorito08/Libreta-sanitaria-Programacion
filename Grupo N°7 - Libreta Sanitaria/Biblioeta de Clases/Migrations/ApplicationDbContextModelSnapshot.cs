@@ -22,32 +22,13 @@ namespace Biblioeta_de_Clases.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Biblioeta_de_Clases.Models.HistorialMedico", b =>
-                {
-                    b.Property<int>("Id_HistorialMedico")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id_HistorialMedico"));
-
-                    b.Property<int>("Id_Mascota")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id_HistorialMedico");
-
-                    b.HasIndex("Id_Mascota")
-                        .IsUnique();
-
-                    b.ToTable("HistorialesMedicos");
-                });
-
             modelBuilder.Entity("Biblioeta_de_Clases.Models.Mascota", b =>
                 {
-                    b.Property<int>("Id_Mascota")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id_Mascota"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Especie")
                         .IsRequired()
@@ -72,18 +53,18 @@ namespace Biblioeta_de_Clases.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id_Mascota");
+                    b.HasKey("Id");
 
                     b.ToTable("Mascotas");
                 });
 
             modelBuilder.Entity("Biblioeta_de_Clases.Models.Vacuna", b =>
                 {
-                    b.Property<int>("Id_Vacuna")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id_Vacuna"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Dosis")
                         .IsRequired()
@@ -92,7 +73,7 @@ namespace Biblioeta_de_Clases.Migrations
                     b.Property<DateTime>("Fecha")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("HistorialId")
+                    b.Property<int>("MascotaId")
                         .HasColumnType("int");
 
                     b.Property<string>("Nombre")
@@ -103,44 +84,27 @@ namespace Biblioeta_de_Clases.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id_Vacuna");
+                    b.HasKey("Id");
 
-                    b.HasIndex("HistorialId");
+                    b.HasIndex("MascotaId");
 
                     b.ToTable("Vacunas");
                 });
 
-            modelBuilder.Entity("Biblioeta_de_Clases.Models.HistorialMedico", b =>
+            modelBuilder.Entity("Biblioeta_de_Clases.Models.Vacuna", b =>
                 {
                     b.HasOne("Biblioeta_de_Clases.Models.Mascota", "Mascota")
-                        .WithOne("HistorialMedico")
-                        .HasForeignKey("Biblioeta_de_Clases.Models.HistorialMedico", "Id_Mascota")
+                        .WithMany("Vacunas")
+                        .HasForeignKey("MascotaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Mascota");
                 });
 
-            modelBuilder.Entity("Biblioeta_de_Clases.Models.Vacuna", b =>
-                {
-                    b.HasOne("Biblioeta_de_Clases.Models.HistorialMedico", "HistorialMedico")
-                        .WithMany("Vacunas")
-                        .HasForeignKey("HistorialId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("HistorialMedico");
-                });
-
-            modelBuilder.Entity("Biblioeta_de_Clases.Models.HistorialMedico", b =>
-                {
-                    b.Navigation("Vacunas");
-                });
-
             modelBuilder.Entity("Biblioeta_de_Clases.Models.Mascota", b =>
                 {
-                    b.Navigation("HistorialMedico")
-                        .IsRequired();
+                    b.Navigation("Vacunas");
                 });
 #pragma warning restore 612, 618
         }

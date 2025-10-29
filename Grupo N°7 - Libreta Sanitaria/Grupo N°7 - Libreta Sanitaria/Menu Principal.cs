@@ -36,20 +36,23 @@ namespace Grupo_N_7___Libreta_Sanitaria
         private void button1_Click_1(object sender, EventArgs e) // Alta Mascota
         {
             {
-                Alta_Mascota AltaMascota = new Alta_Mascota();
+                this.Hide();
+                Alta_Mascota AltaMascota = new Alta_Mascota(this);
                 AltaMascota.ShowDialog();
             }
         }
 
         private void button2_Click(object sender, EventArgs e) // Moficar Mascota
         {
-            Modificacion Modificacion = new Modificacion();
+            this.Hide();
+            Modificacion Modificacion = new Modificacion(this);
             Modificacion.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e) // Eliminar Mascota
         {
-            Borrar_Mascota BorrarMascota = new Borrar_Mascota();
+            this.Hide();
+            Borrar_Mascota BorrarMascota = new Borrar_Mascota(this);
             BorrarMascota.ShowDialog();
         }
 
@@ -65,7 +68,8 @@ namespace Grupo_N_7___Libreta_Sanitaria
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Ver_Perfil_Mascota VerPerfilMascota = new Ver_Perfil_Mascota();
+            this.Hide();
+            Ver_Perfil_Mascota VerPerfilMascota = new Ver_Perfil_Mascota(this);
             VerPerfilMascota.ShowDialog();
         }
     }

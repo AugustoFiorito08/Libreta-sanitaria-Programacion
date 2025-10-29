@@ -24,7 +24,7 @@ namespace Biblioeta_de_Clases.Repository
         public static void BorrarMascota(Mascota mascota)
         {
             using var context = new ApplicationDbContext();
-            var mascotaAEliminar = context.Mascotas.Find(mascota.Id_Mascota);
+            var mascotaAEliminar = context.Mascotas.Find(mascota.Id);
             if (mascotaAEliminar != null)
             {
                 context.Mascotas.Remove(mascotaAEliminar);
@@ -35,7 +35,7 @@ namespace Biblioeta_de_Clases.Repository
         {
             using (var context = new ApplicationDbContext())
             {
-                var mascotaExistente = context.Mascotas.FirstOrDefault(m => m.Id_Mascota == mascota.Id_Mascota);
+                var mascotaExistente = context.Mascotas.FirstOrDefault(m => m.Id == mascota.Id);
                 if (mascotaExistente != null)
                 {
                     mascotaExistente.Nombre = mascota.Nombre;
@@ -65,7 +65,7 @@ namespace Biblioeta_de_Clases.Repository
             using (var context = new ApplicationDbContext())
             {
                 Mascota mascotaEncontrada = context.Mascotas
-                    .FirstOrDefault(m => m.Id_Mascota == idMascota);
+                    .FirstOrDefault(m => m.Id == idMascota);
                 return mascotaEncontrada;
             }
         }
